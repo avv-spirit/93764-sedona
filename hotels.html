@@ -23,7 +23,27 @@
       <h1 class="visually-hidden">Поиск апартаментов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр апартаментов</h2>
-        <!-- Здесь будет форма фильтра поиска апартаментов -->
+        <form class="search-form">
+          <fieldset>
+            <legend class="visually-hidden">Инфраструктура:</legend>
+            <div class="filter-form">Инфраструктура:</div>
+            <input type="checkbox" aria-checked="Выбран бассейн" checked>Бассейн<br>
+            <input type="checkbox" aria-checked="Выбрана парковка">Парковка<br>
+            <input type="checkbox" aria-checked="Выбран WI-FI">WI-FI<br>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Тип жилья:</legend>
+            <div class="filter-form">Тип жилья:</div>
+            <label for="hotel"></label>
+            <input type="checkbox" name="hotel" id="hotel" aria-checked="Выбранв Гостиница" checked>Гостиница<br>
+            <label for="parking"></label>
+            <input type="checkbox" name="parking" id="parking" aria-checked="Выбрана Парковка" checked>Мотель<br>
+            <label for="apartments"></label>
+            <input type="checkbox" name="apartments" id="apartments" aria-checked="Выбраны Апартаменты" checked>Апартаменты<br>
+          </fieldset>
+          <div class="filter-form">Стоимость в сутки (Р):</div>
+          <button class="button-form">Показать</button>
+        </form>
       </section>
       <section class="sorting-title">
         <h2 class="sorting-number">Найдено: 3</h2>
@@ -39,34 +59,34 @@
         <article class="hotels-list">
           <h2 class="hotels-title"><a href="#">Amara Resort & Spa</a></h2>
           <p class="hotel-item">
-            <img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara hotel">
+            <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara hotel">
             <span class="name-hotel">Гостиница</span>
             <span class="price-hotel">От 4000 р.</span>
           </p>
-          <a class="button-details" href="#">Подробнее</a>
-          <a class="button-book" href="#">Забронировать</a>
+          <a class="button-details" href="#" aria-label="Информация о Amara Resort & Spa">Подробнее</a>
+          <a class="button-book" href="#" aria-label="Забронировать Amara Resort & Spa">Забронировать</a>
           <span class="rating-item">Рейтинг: 8,5</span>
         </article>
         <article class="hotels-list">
           <h2 class="hotels-title"><a href="#">Desert Quail Inn</a></h2>
           <p class="hotel-item">
-            <img src="img/desert-inn-hotel.jpg" width="135" height="90" alt="Desert inn hotel">
+            <img src="img/desert-inn.jpg" width="135" height="90" alt="Desert inn hotel">
           <span class="name-hotel">Мотель</span>
           <span class="price-hotel">От 3000 р.</span>
           </p>
-          <a class="button-details" href="#">Подробнее</a>
-          <a class="button-book" href="#">Забронировать</a>
+          <a class="button-details" href="#" aria-label="Информация о Desert Quail Inn">Подробнее</a>
+          <a class="button-book" href="#" aria-label="Забронировать Desert Quail Inn">Забронировать</a>
           <span class="rating-item">Рейтинг: 8,9</span>
         </article>
         <article class="hotels-list">
           <h2 class="hotels-title"><a href="#">Villas at Poco Diablo</a></h2>
           <p class="hotel-item">
-            <img src="img/villas-poco-diablo.jpg" width="135" height="90" alt="Villas  at poco diablo">
+            <img src="img/villas-diablo.jpg" width="135" height="90" alt="Villas  at poco diablo">
           <span class="name-hotel">Апартаменты</span>
           <span class="price-hotel">От 2000 р.</span>
           </p>
-          <a class="button-details" href="#">Подробнее</a>
-          <a class="button-book" href="#">Забронировать</a>
+          <a class="button-details" href="#" aria-label="Информация о Villas at Poco Diablo">Подробнее</a>
+          <a class="button-book" href="#" aria-label="Забронировать Villas at Poco Diablo">Забронировать</a>
           <span class="rating-item">Рейтинг: 9,2</span>
         </article>
       </section>
@@ -75,13 +95,13 @@
       <p class="visit-secona">#visit-sedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="#" aria-label="Перейти на Twitter">Twitter</a></li>
+          <li><a class="social-button" href="#" aria-label="Перейти на Facebook">Фейсбук</a></li>
+          <li><a class="social-button" href="#" aria-label="Перейти на YouTube">YouTube</a></li>
         </ul>
       </div>
       <p class="footer-copyright">website by</p>
-      <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss">
+      <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт htmlacademy.ru">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
       </a>
     </footer>

@@ -80,9 +80,19 @@
         <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <p class="search-title">
-            <a class="button" href="#">Поиск гостиницы в Седоне</a>
+            <a class="button-find-hotels" href="#">Поиск гостиницы в Седоне</a>
           </p>
-          <!-- Здесь будет календарь и форма поиска гостиницы -->
+          <form>
+            <label for="arrivals">Дата заезда:</label>
+            <input class="arrival-date" type="text" name="arrivals" id="arrivals" value="24 апреля 2017"><br>
+            <label for="departure">Дата выезда:</label>
+            <input class="departure-date" type="text" name="departure" id="departure" value="4 июля 2017"><br>
+            <label for="adult">Взрослые:</label>
+            <input class="adult-choose" type="text" name="adult" id="adult" value="- 2 +">
+            <label for="children">Дети:</label>
+            <input class="children-choose" type="text" name="chlidren" id="children" value="- 0 +"><br>
+            <button class="button-find"><a href="hotels.html" aria-label="Найти гостиницу">Найти</button>
+          </form>
       </section>
       <div class="main-map">
         <img src="img/map.jpg" width="1200" height="475" alt="Карта города Седона">
@@ -92,14 +102,14 @@
       <p class="visit-secona">#visit-sedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="#" aria-label="Перейти на Twitter">Twitter</a></li>
+          <li><a class="social-button" href="#" aria-label="Перейти на Facebook">Фейсбук</a></li>
+          <li><a class="social-button" href="#" aria-label="Перейти на YouTube">YouTube</a></li>
         </ul>
       </div>
       <p class="footer-copyright">website by</p>
-      <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss">
-        <img src="img/index-footer-logo.svg" width="410" height="145" alt="Логотип htmlacademy">
+      <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт htmlacademy.ru">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
       </a>
     </footer>
   </body>
