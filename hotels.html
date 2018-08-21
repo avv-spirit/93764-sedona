@@ -24,22 +24,22 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр апартаментов</h2>
         <form class="search-form">
-          <fieldset>
+          <fieldset class="first-preferences">
             <legend class="additions">Инфраструктура:</legend>
-            <input type="checkbox" aria-checked="Выбран бассейн" checked>Бассейн<br>
-            <input type="checkbox" aria-checked="Выбрана парковка">Парковка<br>
-            <input type="checkbox" aria-checked="Выбран WI-FI">WI-FI<br>
+            <input class="choose-preferences" type="checkbox" aria-checked="Выбран бассейн" checked>Бассейн<br>
+            <input class="choose-preferences" type="checkbox" aria-checked="Выбрана парковка">Парковка<br>
+            <input class="choose-preferences" type="checkbox" aria-checked="Выбран WI-FI">WI-FI<br>
           </fieldset>
-          <fieldset>
+          <fieldset class="second-preferences">
             <legend class="additions">Тип жилья:</legend>
             <label for="hotel"></label>
-            <input type="checkbox" name="hotel" id="hotel" aria-checked="Выбранв Гостиница" checked>Гостиница<br>
+            <input class="choose-preferences" type="checkbox" name="hotel" id="hotel" aria-checked="Выбранв Гостиница" checked>Гостиница<br>
             <label for="parking"></label>
-            <input type="checkbox" name="parking" id="parking" aria-checked="Выбрана Парковка" checked>Мотель<br>
+            <input class="choose-preferences" type="checkbox" name="parking" id="parking" aria-checked="Выбрана Парковка" checked>Мотель<br>
             <label for="apartments"></label>
-            <input type="checkbox" name="apartments" id="apartments" aria-checked="Выбраны Апартаменты" checked>Апартаменты<br>
+            <input class="choose-preferences" type="checkbox" name="apartments" id="apartments" aria-checked="Выбраны Апартаменты" checked>Апартаменты<br>
           </fieldset>
-          <div class="filter-form">Стоимость в сутки (Р):</div>
+          <div class="additions">Стоимость в сутки (Р):</div>
           <button class="button-form">Показать</button>
         </form>
       </section>
