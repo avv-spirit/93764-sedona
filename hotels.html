@@ -23,17 +23,20 @@
       <h1 class="visually-hidden">Поиск апартаментов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр апартаментов</h2>
-        <form class="search-form">
+        <form class="search-form" action="echo.htmlacademy.ru">
           <fieldset class="first-preferences">
             <legend class="additions">Инфраструктура:</legend>
-            <input class="choose-preferences" type="checkbox" aria-checked="Выбран бассейн" checked>Бассейн<br>
-            <input class="choose-preferences" type="checkbox" aria-checked="Выбрана парковка">Парковка<br>
-            <input class="choose-preferences" type="checkbox" aria-checked="Выбран WI-FI">WI-FI<br>
+            <label for="swimming-pool"></label>
+            <input class="choose-preferences" type="checkbox" id="swimming-pool" aria-checked="Выбран бассейн" checked>Бассейн<br>
+            <label for="parking-choose"></label>
+            <input class="choose-preferences" type="checkbox" id="parking-choose" aria-checked="Выбрана парковка">Парковка<br>
+            <label for="wi-fi"></label>
+            <input class="choose-preferences" type="checkbox" id="wi-fi" aria-checked="Выбран WI-FI">WI-FI<br>
           </fieldset>
           <fieldset class="second-preferences">
             <legend class="additions">Тип жилья:</legend>
             <label for="hotel"></label>
-            <input class="choose-preferences" type="checkbox" name="hotel" id="hotel" aria-checked="Выбранв Гостиница" checked>Гостиница<br>
+            <input class="choose-preferences" type="checkbox" name="hotel" id="hotel" aria-checked="Выбрана Гостиница" checked>Гостиница<br>
             <label for="parking"></label>
             <input class="choose-preferences" type="checkbox" name="parking" id="parking" aria-checked="Выбрана Парковка" checked>Мотель<br>
             <label for="apartments"></label>
@@ -52,7 +55,8 @@
             <li class="type"><a href="#">По типу</a></li>
             <li class="rating"><a href="#">По рейтингу</a></li>
           </ul>
-          <img src="img/directions.svg" width="11" height="10" alt="Стрелки направления фильтра">
+          <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка направления фильтра вверх">
+          <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка направления фильтра вниз">
         </div>
         <article class="hotels-list">
           <h2 class="hotels-title"><a href="#">Amara Resort & Spa</a></h2>

@@ -24,6 +24,7 @@
       <div class="welcome">
         <img src="img/logo-sedona.svg" width="459" height="353" alt="Добро пожаловать в Седону">
       </div>
+      <h2 class="visually-hidden">Городок Седона</h2>
       <section class="sedona">
         <h3 class="sedona-name">Седона - небольшой городок в аризоне, заслуживающий большего!</h3>
         <p class="sedona-item">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -82,16 +83,20 @@
           <p class="search-title">
             <a class="button-find-hotels" href="#">Поиск гостиницы в Седоне</a>
           </p>
-          <form>
+          <form class="calendar-hotel" action="echo.htmlacademy.ru">
             <label for="arrivals">Дата заезда:</label>
             <input class="arrival-date" type="text" name="arrivals" id="arrivals" value="24 апреля 2017"><br>
             <label for="departure">Дата выезда:</label>
             <input class="departure-date" type="text" name="departure" id="departure" value="4 июля 2017"><br>
             <label for="adult">Взрослые:</label>
-            <input class="adult-choose" type="text" name="adult" id="adult" value="- 2 +">
+            <input class="adult-choose" type="text" name="adult" id="adult" value="2">
+            <button class="plus-minus" type="button">-</button>
+            <button class="plus-minus" type="button">+</button>
             <label for="children">Дети:</label>
-            <input class="children-choose" type="text" name="chlidren" id="children" value="- 0 +"><br>
-            <button class="button-find"><a href="hotels.html" aria-label="Найти гостиницу">Найти</button>
+            <input class="children-choose" type="text" name="chlidren" id="children" value="0"><br>
+            <button class="plus-minus" type="button">-</button>
+            <button class="plus-minus" type="button">+</button>
+            <button class="button-find" type="button">Найти</button>
           </form>
       </section>
       <div class="main-map">
