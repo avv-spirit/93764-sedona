@@ -26,23 +26,25 @@
         <form class="search-form" action="echo.htmlacademy.ru">
           <fieldset class="first-preferences">
             <legend class="additions">Инфраструктура:</legend>
-            <label for="swimming-pool"></label>
-            <input class="choose-preferences" type="checkbox" id="swimming-pool" aria-checked="Выбран бассейн" checked>Бассейн<br>
-            <label for="parking-choose"></label>
-            <input class="choose-preferences" type="checkbox" id="parking-choose" aria-checked="Выбрана парковка">Парковка<br>
-            <label for="wi-fi"></label>
-            <input class="choose-preferences" type="checkbox" id="wi-fi" aria-checked="Выбран WI-FI">WI-FI<br>
+            <label for="swimming-pool">Бассейн</label>
+            <input class="choose-preferences" type="checkbox" id="swimming-pool" aria-checked="Выбран бассейн" checked><br>
+            <label for="parking-choose">Парковка</label>
+            <input class="choose-preferences" type="checkbox" id="parking-choose" aria-checked="Выбрана парковка"><br>
+            <label for="wi-fi">WI-FI</label>
+            <input class="choose-preferences" type="checkbox" id="wi-fi" aria-checked="Выбран WI-FI"><br>
           </fieldset>
           <fieldset class="second-preferences">
             <legend class="additions">Тип жилья:</legend>
-            <label for="hotel"></label>
-            <input class="choose-preferences" type="checkbox" name="hotel" id="hotel" aria-checked="Выбрана Гостиница" checked>Гостиница<br>
-            <label for="parking"></label>
-            <input class="choose-preferences" type="checkbox" name="parking" id="parking" aria-checked="Выбрана Парковка" checked>Мотель<br>
-            <label for="apartments"></label>
-            <input class="choose-preferences" type="checkbox" name="apartments" id="apartments" aria-checked="Выбраны Апартаменты" checked>Апартаменты<br>
+            <label for="hotel">Гостиница</label>
+            <input class="choose-preferences" type="checkbox" name="hotel" id="hotel" aria-checked="Выбрана Гостиница" checked><br>
+            <label for="motel">Мотель</label>
+            <input class="choose-preferences" type="checkbox" name="parking" id="motel" aria-checked="Выбран Мотель" checked><br>
+            <label for="apartments">Апартаменты</label>
+            <input class="choose-preferences" type="checkbox" name="apartments" id="apartments" aria-checked="Выбраны Апартаменты" checked><br>
           </fieldset>
-          <div class="additions">Стоимость в сутки (Р):</div>
+          <fieldset class="price-filter">
+            <legend class="price-day">Стоимость в сутки (Р):</legend>
+          </fieldset>
           <button class="button-form">Показать</button>
         </form>
       </section>
