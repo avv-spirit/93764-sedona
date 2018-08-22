@@ -24,28 +24,28 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр апартаментов</h2>
         <form class="search-form" action="echo.htmlacademy.ru">
-          <fieldset class="first-preferences">
+          <fieldset class="filter-preferences">
             <legend class="additions">Инфраструктура:</legend>
-            <label for="swimming-pool">Бассейн</label>
-            <input class="choose-preferences" type="checkbox" id="swimming-pool" aria-checked="Выбран бассейн" checked><br>
-            <label for="parking-choose">Парковка</label>
-            <input class="choose-preferences" type="checkbox" id="parking-choose" aria-checked="Выбрана парковка"><br>
-            <label for="wi-fi">WI-FI</label>
-            <input class="choose-preferences" type="checkbox" id="wi-fi" aria-checked="Выбран WI-FI"><br>
+            <input class="choose-preferences" type="checkbox" name="choose-swimming-pool" id="swimming-pool" aria-label="Выбран бассейн" checked>
+            <label for="swimming-pool">Бассейн</label><br>
+            <input class="choose-preferences" type="checkbox" name="choose-parking" id="parking-choose" aria-label="Выбрана парковка">
+            <label for="parking-choose">Парковка</label><br>
+            <input class="choose-preferences" type="checkbox" name="choose-wifi" id="wi-fi" aria-label="Выбран WI-FI">
+            <label for="wi-fi">WI-FI</label><br>
           </fieldset>
-          <fieldset class="second-preferences">
+          <fieldset class="filter-preferences">
             <legend class="additions">Тип жилья:</legend>
-            <label for="hotel">Гостиница</label>
-            <input class="choose-preferences" type="checkbox" name="hotel" id="hotel" aria-checked="Выбрана Гостиница" checked><br>
-            <label for="motel">Мотель</label>
-            <input class="choose-preferences" type="checkbox" name="parking" id="motel" aria-checked="Выбран Мотель" checked><br>
-            <label for="apartments">Апартаменты</label>
-            <input class="choose-preferences" type="checkbox" name="apartments" id="apartments" aria-checked="Выбраны Апартаменты" checked><br>
+            <input class="choose-preferences" type="checkbox" name="choose-hotel" id="hotel" aria-label="Выбрана Гостиница" checked>
+            <label for="hotel">Гостиница</label><br>
+            <input class="choose-preferences" type="checkbox" name="choose-parking" id="motel" aria-label="Выбран Мотель" checked>
+            <label for="motel">Мотель</label><br>
+            <input class="choose-preferences" type="checkbox" name="choose-apartments" id="apartments" aria-label="Выбраны Апартаменты" checked>
+            <label for="apartments">Апартаменты</label><br>
           </fieldset>
           <fieldset class="price-filter">
             <legend class="price-day">Стоимость в сутки (Р):</legend>
           </fieldset>
-          <button class="button-form">Показать</button>
+          <button class="button-form" type="submit" aria-label="Показать список отелей">Показать</button>
         </form>
       </section>
       <section class="sorting-title">
@@ -67,8 +67,8 @@
             <span class="name-hotel">Гостиница</span>
             <span class="price-hotel">От 4000 р.</span>
           </p>
-          <a class="button-details" href="#" aria-label="Информация о Amara Resort & Spa">Подробнее</a>
-          <a class="button-book" href="#" aria-label="Забронировать Amara Resort & Spa">Забронировать</a>
+          <a class="button-details" href="#" tabindex="0" aria-label="Информация о Amara Resort & Spa">Подробнее</a>
+          <a class="button-book" href="#" tabindex="0" aria-label="Забронировать Amara Resort & Spa">Забронировать</a>
           <span class="rating-item">Рейтинг: 8,5</span>
         </article>
         <article class="hotels-list">
@@ -78,8 +78,8 @@
           <span class="name-hotel">Мотель</span>
           <span class="price-hotel">От 3000 р.</span>
           </p>
-          <a class="button-details" href="#" aria-label="Информация о Desert Quail Inn">Подробнее</a>
-          <a class="button-book" href="#" aria-label="Забронировать Desert Quail Inn">Забронировать</a>
+          <a class="button-details" href="#" tabindex="0" aria-label="Информация о Desert Quail Inn">Подробнее</a>
+          <a class="button-book" href="#" tabindex="0" aria-label="Забронировать Desert Quail Inn">Забронировать</a>
           <span class="rating-item">Рейтинг: 8,9</span>
         </article>
         <article class="hotels-list">
@@ -89,8 +89,8 @@
           <span class="name-hotel">Апартаменты</span>
           <span class="price-hotel">От 2000 р.</span>
           </p>
-          <a class="button-details" href="#" aria-label="Информация о Villas at Poco Diablo">Подробнее</a>
-          <a class="button-book" href="#" aria-label="Забронировать Villas at Poco Diablo">Забронировать</a>
+          <a class="button-details" href="#" tabindex="0" aria-label="Информация о Villas at Poco Diablo">Подробнее</a>
+          <a class="button-book" href="#" tabindex="0" aria-label="Забронировать Villas at Poco Diablo">Забронировать</a>
           <span class="rating-item">Рейтинг: 9,2</span>
         </article>
       </section>
@@ -99,13 +99,13 @@
       <p class="visit-secona">#visit-sedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#" aria-label="Перейти на Twitter">Twitter</a></li>
-          <li><a class="social-button" href="#" aria-label="Перейти на Facebook">Фейсбук</a></li>
-          <li><a class="social-button" href="#" aria-label="Перейти на YouTube">YouTube</a></li>
+          <li><a class="social-button" href="#" tabindex="0" aria-label="Перейти на Twitter">Twitter</a></li>
+          <li><a class="social-button" href="#" tabindex="0" aria-label="Перейти на Facebook">Фейсбук</a></li>
+          <li><a class="social-button" href="#" tabindex="0" aria-label="Перейти на YouTube">YouTube</a></li>
         </ul>
       </div>
       <p class="footer-copyright">website by</p>
-      <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт htmlacademy.ru">
+      <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss" tabindex="0" aria-label="Перейти на сайт htmlacademy.ru">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
       </a>
     </footer>
