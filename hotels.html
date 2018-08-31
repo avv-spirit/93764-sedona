@@ -7,7 +7,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="hotels-page">
 <header class="main-header">
   <nav class="main-navigation">
     <a class="main-header-logo" href="index.html">
@@ -53,14 +53,18 @@
   <section class="sorting-title">
     <h2 class="sorting-number">Найдено: 3</h2>
     <div class="sorting">
-      <h3>Сортировать по:</h3>
-      <ul>
-        <li class="price"><a href="#">По цене</a></li>
-        <li class="type"><a href="#">По типу</a></li>
-        <li class="rating"><a href="#">По рейтингу</a></li>
+      <h3>Сортировка:</h3>
+      <ul class="sort-by-type">
+        <li class="sorting-active"><a href="#">По цене</a></li>
+        <li class="sorting-type"><a href="#">По типу</a></li>
+        <li class="sorting-type"><a href="#">По рейтингу</a></li>
       </ul>
-      <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка направления фильтра вверх">
-      <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка направления фильтра вниз">
+      <div class="icon-position">
+        <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка направления фильтра вверх">
+      </div>
+      <div class="icon-position">
+        <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка направления фильтра вниз">
+      </div>
     </div>
     <article class="hotels-list">
       <h2 class="hotels-title"><a href="#">Amara Resort & Spa</a></h2>
@@ -87,7 +91,7 @@
     <article class="hotels-list">
       <h2 class="hotels-title"><a href="#">Villas at Poco Diablo</a></h2>
       <p class="hotel-item">
-        <img src="img/villas-diablo.jpg" width="135" height="90" alt="Villas  at poco diablo">
+        <img src="img/villas-diablo.jpg" width="135" height="90" alt="Villas  at Poco Diablo">
         <span class="name-hotel">Апартаменты</span>
         <span class="price-hotel">От 2000 р.</span>
       </p>
@@ -98,7 +102,7 @@
   </section>
 </main>
 <footer class="main-footer">
-  <p class="visit-secona">#visit-sedona</p>
+  <p class="visit-sedona">#visit-sedona</p>
   <div class="footer-social">
     <ul>
       <li><a class="social-button" href="#" tabindex="0" aria-label="Перейти на Twitter">Twitter</a></li>
@@ -106,10 +110,11 @@
       <li><a class="social-button" href="#" tabindex="0" aria-label="Перейти на YouTube">YouTube</a></li>
     </ul>
   </div>
-  <p class="footer-copyright">website by</p>
-  <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss" tabindex="0" aria-label="Перейти на сайт htmlacademy.ru">
-    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
-  </a>
+  <p class="footer-copyright">website by
+    <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт htmlacademy.ru">
+      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
+    </a>
+  </p>
 </footer>
 </body>
 </html>

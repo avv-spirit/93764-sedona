@@ -13,6 +13,12 @@ body {
 
 }
 
+.hotels-page {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
 a {
   text-decoration: none;
 }
@@ -42,26 +48,34 @@ a {
   color: #766357;
 }
 
+.welcome {
+  text-align: center;
+}
+
 .background-mountains {
   width: 1200px;
   height: 800px;
 }
 
-.sedona,
-.sedona-name,
-.sedona-item,
-.sedona-features {
+.sedona {
   text-align: center;
+
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 .sedona-name {
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
 }
 
 .sedona-item {
+  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
 }
 
 .sedona-features {
@@ -69,8 +83,12 @@ a {
   background-color: #81b3d2;
 }
 
-.features-list .feature-item  {
+.features-list {
   list-style: none;
+}
+
+.features-item {
+  text-align: center;
 }
 
 .features-area {
@@ -89,124 +107,267 @@ a {
   background-color: #ffffff;
 }
 
+.interest .interest-choose {
+  font-weight: normal;
+}
+
 .button-find-hotels {
   font: inherit;
   vertical-align: middle;
   text-transform: uppercase;
-
   color: #ffffff;
+
   background-color: #766357;
 
-
   border: none;
+}
+
+.button-find-hotels:hover {
+  background-color: #604e43;
+}
+
+.button-find-hotels:active {
+  color: #857871;
+
+  background-color: #503e33;
+}
+
+.calendar-hotel input {
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: 1px;
+}
+
+.calendar-hotel input:hover {
+  background-color: #ebebeb;
+  border: 1px;
+}
+
+.calendar-hotel input:focus {
+  background-color: #ffffff;
+  border: 1px #e5e5e5;
 }
 
 .plus-minus {
   font: inherit;
   text-align: center;
   vertical-align: middle;
-  text-transform: uppercase;
-
   color: #a9a9a9;
-  background-color: #f2f2f2;
 
+  background-color: #f2f2f2;
   border: none;
 }
 
-.plus-minus:hover,
-.plus-minus:focus {
+.plus-minus:hover {
   color: #000000;
 }
+
 .plus-minus:active {
   color: #81b3d2;
 }
 
-.button-find-hotels:hover,
-.button-find-hotels:focus {
-  background-color: #604e43;
-}
-
-.button-find-hotels:active {
-  color: #695950;
-  background-color: #503e33;
-}
-
-.arrival-date {
-  text-align: left;
-
-  color: #000000;
-  background-color: #f2f2f2;
-}
-
-.arrival-date:hover {
-  color: #000000;
-  background-color: #ebebeb;
-}
-
-.arrival-date:focus {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.calendar-date svg {
-  color: #ffffff;
-  background-color: #f2f2f2;
-}
-
-.departure-date {
-  text-align: left;
-
-  color: #000000;
-  background-color: #f2f2f2;
-}
-
-.departure-date:hover {
-  color: #000000;
-  background-color: #ebebeb;
-}
-
-.departure-date:focus {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.adult-choose {
-  text-align: center;
-
-  color: #000000;
-  background-color: #f2f2f2;
-}
-
-.children-choose {
-  text-align: center;
-
-  color: #000000;
-  background-color: #f2f2f2;
-}
-
 .button-find {
+  font: inherit;
   text-align: center;
   vertical-align: middle;
-  text-transform: uppercase;
-
   color: #ffffff;
-  background-color: #81b3d2;
 
-  border: none;
+  background-color: #81b3d2;
 }
 
-.button-find:hover,
-.button-find:focus {
+.button-find:hover {
   color: #ffffff;
+
   background-color: #669ec0;
 }
 
 .button-find:active {
-  color: #7aadcb;
+  color: #88b6d1;
+
   background-color: #5496bd;
 }
 
 .main-map {
   width: 1200px;
   height: 474px;
+}
+
+.main-footer {
+  color: #000000;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.visit-sedona {
+  text-align: center;
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-copyright {
+  font-weight: normal;
+  text-align: center;
+
+  color: #000000;
+}
+
+/* -----   Стили hotels  ----- */
+
+.site-navigation-current a {
+  color: #766357;
+
+  background-color: #ffffff;
+}
+
+.filters {
+  color: #ffffff;
+
+  background-color: #ffffff;
+  background-image: url("../img/filter-background.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.search-form fieldset {
+  border: none;
+}
+
+.additions {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-preferences label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-form {
+  /*font: inherit;*/
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.button-form:hover {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.sorting h3 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+.sort-by-type {
+  list-style: none;
+}
+
+.sorting-active a{
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
+
+  background-color: #ffffff;
+}
+
+.sorting-type a {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba( 0, 0, 0, 0.3);
+
+  background-color: #ffffff;
+}
+
+.sorting-type a:hover {
+  color: #81b3d2;
+
+  background-color: #ffffff;
+}
+
+.sorting-type a:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.hotels-title a {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.hotel-item {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: 21px;
+  text-transform: uppercase;
+}
+
+.button-details {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.button-details:hover {
+  color: #ffffff;
+
+  background-color: #669ec0;
+}
+
+.button-details:active {
+  color: #88b6d1;
+
+  background-color: #5496bd;
+}
+
+.button-book {
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.button-book:hover {
+  color: #ffffff;
+
+  background-color: #604e43;
+}
+
+.button-book:active {
+  color: #857871;
+
+  background-color: #503e33;
+}
+
+.rating-item {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: 21px;
+  text-transform: uppercase;
+  color: #666666;
+
+  background-color: #f2f2f2;
 }

@@ -44,15 +44,18 @@
     <h2 class="visually-hidden">Преимущества</h2>
     <ul class="features-list">
       <li class="feature-item">
-        <h3 class="sedona-name">Жилье</h3>
+        <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
+        <h3 class="sedona-name">Жильё</h3>
         <p class="sedona-item">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </li>
       <li class="feature-item">
+        <img src="img/icon-2.svg" width="75" height="72" alt="Еда">
         <h3 class="sedona-name">Еда</h3>
         <p class="sedona-item">Всегда заказывайте фирменный бургер и вы не разочаруетесь!</p>
       </li>
       <li class="feature-item">
-        <h3 class="sedona-name">Сувенииры</h3>
+        <img src="img/icon-3.svg" width="75" height="72" alt="Сувениры">
+        <h3 class="sedona-name">Сувениры</h3>
         <p class="sedona-item">Не только китайского, но и местного производства!</p>
       </li>
     </ul>
@@ -84,21 +87,20 @@
   </section>
   <section class="interest">
     <h2>Заинтересовались?</h2>
-    <p>Укажите предполагаемые поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <p class="interest-choose">Укажите предполагаемые поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <p class="search-title">
       <a class="button-find-hotels" href="#">Поиск гостиницы в Седоне</a>
     </p>
     <form class="calendar-hotel" action="echo.htmlacademy.ru">
       <label for="arrivals">Дата заезда:</label>
       <input class="arrival-date" type="text" name="arrivals" id="arrivals" value="24 апреля 2017"><br>
-      <!--<a class="calendar-date" href="#" aria-label="Выбрать дату в календаре">
+      <button class="calendar-date" type="submit" aria-label="Выбрать дату в календаре"> <!-- Здесь я кнопку не вставлял в svg ещё -->
         <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
-      </a><br>-->
+      </button><br>
       <label for="departure">Дата выезда:</label>
       <input class="departure-date" type="text" name="departure" id="departure" value="4 июля 2017"><br>
-      <button class="calendar-date" type="submit" aria-label="Выбрать дату в календаре">
-
-        <!--<img src="img/calendar.svg" width="21" height="22" alt="Календарь"> -->
+      <button class="calendar-date" type="submit" aria-label="Выбрать дату в календаре"> <!-- То же самое, здесь я кнопку не вставлял в svg ещё -->
+        <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
       </button><br>
       <label for="adult">Взрослые:</label>
       <button class="plus-minus" type="submit">-</button>
@@ -116,18 +118,19 @@
   </div>
 </main>
 <footer class="main-footer">
-  <p class="visit-secona">#visit-sedona</p>
+  <p class="visit-sedona">#visit-sedona</p>
   <div class="footer-social">
     <ul>
-      <li><a class="social-button" href="#" aria-label="Перейти на Twitter">Twitter</a></li>
-      <li><a class="social-button" href="#" aria-label="Перейти на Facebook">Фейсбук</a></li>
-      <li><a class="social-button" href="#" aria-label="Перейти на YouTube">YouTube</a></li>
+      <li><a class="social-button" href="#" tabindex="0" aria-label="Перейти на Twitter">Twitter</a></li>
+      <li><a class="social-button" href="#" tabindex="0" aria-label="Перейти на Facebook">Фейсбук</a></li>
+      <li><a class="social-button" href="#" tabindex="0" aria-label="Перейти на YouTube">YouTube</a></li>
     </ul>
   </div>
-  <p class="footer-copyright">website by</p>
-  <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт htmlacademy.ru">
-    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
-  </a>
+  <p class="footer-copyright">website by
+    <a class="footer-logo" href="htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт htmlacademy.ru">
+      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
+    </a>
+  </p>
 </footer>
 </body>
 </html>
