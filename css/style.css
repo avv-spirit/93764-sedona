@@ -89,6 +89,8 @@ img {
   line-height: 26px;
   color: #000000;
 
+  position: relative;
+
   background-color: #ffffff;
   /*outline: 1px solid blue;*/
 }
@@ -98,6 +100,8 @@ img {
   width: 140px;
   height: 72px;
   position: absolute;
+  top: -1px;
+  z-index: 1;
 
   /*outline: 1px solid red;*/
 }
@@ -129,9 +133,25 @@ img {
 }
 
 .site-navigation li {
-  padding: 15px 28px;
-  background-color: gray;
+  /*padding: 15px 72px;*/
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 72px;
+  padding-right: 72px;
+  /*background-color: gray;*/
   /*outline: 1px solid red;*/
+}
+
+.site-navigation li:nth-child(2) {
+  margin-left: 2px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: 244px;
+}
+
+.site-navigation li:nth-child(4) {
+  padding-left: 94px;
 }
 
 .site-navigation a {
@@ -163,21 +183,27 @@ img {
   display: flex;
   justify-content: center;
   width: 1200px;
-  height: 509px;
+  height: 508px;
+
+  position: relative;
 
   background-image: url("../img/background-mountains.jpg");
+  background-position: 0 21%;
   /*outline: 1px solid red;*/
+}
+
+.welcome img {
+  position: absolute;
+  top: 76px;
 }
 
 .welcome:before {
   content:"";
   position: absolute;
   z-index: 1;
-  top: 507px;
-  bottom: 0;
-  right: 0;
-  left: 352px;
-  width: 1201px;
+  top: 451px;
+
+  width: 1200px;
   height: 59px;
 
   background-repeat: no-repeat;
@@ -185,19 +211,11 @@ img {
   /*outline: 1px solid red;*/
 }
 
-/*.background-mountains {    --- Задний фон гор ---
-  display: flex;
-  width: 1200px;
-  min-height: 800px;
-
-  outline: 1px solid red;
-}*/
-
 .sedona {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 0;
+  margin-bottom: 3px;
   padding: 0;
   padding-top: 60px;
   padding-bottom: 48px;
@@ -212,7 +230,7 @@ img {
 
 .sedona h3 {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   text-align: center;
   font-size: 21px;
@@ -242,6 +260,8 @@ img {
 .image-town {
   display: flex;
   flex-direction: row;
+  position: absolute;
+  right: 0;
   /*min-height: 257px;*/
 }
 
@@ -262,10 +282,11 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /*margin-bottom: 54px;*/
+  margin: 0;
   padding: 0;
   width: 1200px;
-  min-height: 257px;
+  /*min-height: 257px;*/
+  position: relative;
 
   color: #ffffff;
 
@@ -345,6 +366,7 @@ img {
   justify-content: flex-start;
   /*margin-bottom: 27px;*/
   padding: 0;
+  min-height: 256px;
   width: 1200px;
 
   color: #ffffff;
@@ -359,7 +381,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
-  padding: 45px 0;
+  padding: 47px 0;
 
 
   width: 400px;
@@ -367,16 +389,16 @@ img {
 
 .feature-mountains h3 {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 7px;
 
   text-align: center;
   font-size: 21px;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .feature-mountains p {
-  margin-top: 6px;
-  margin-bottom: 15px;
+  margin-top: 16px;
+  margin-bottom: 3px;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
@@ -456,7 +478,7 @@ img {
 }
 
 .interest h2 {
-  margin-top: 50px;
+  margin-top: 52px;
   margin-bottom: 10px;
   font-size: 30px;
   line-height: 36px;
@@ -475,7 +497,7 @@ img {
 
 .search-title {
   margin: 0;
-  margin-top: 34px;
+  margin-top: 33px;
   padding: 0;
 }
 
@@ -508,9 +530,9 @@ img {
   background-color: #503e33;
 }
 
-.calendar-hotel {
+/*.calendar-hotel {
   display: none;
-}
+}*/
 
 .calendar-hotel input {
   font: inherit;
@@ -587,9 +609,9 @@ img {
 .main-footer {
   /*display: flex;*/
   /*margin-top: 78px;*/
-  padding: 36px 0;
+  /*padding: 36px 0;*/
   width: 1200px;
-  min-height: 121px;
+  /*min-height: 121px;*/
   color: #000000;
 
   background-color: rgba(255, 255, 255, 0.8);
@@ -602,10 +624,12 @@ img {
 }
 
 .visit-sedona {
-  width: 400px;
+  width: 241px;
+  /*min-height: 141px;*/
   margin: 0;
-  margin-right: 212px;
-
+  margin-left: 73px;
+  padding-top: 44px;
+  padding-left: 7px;
   text-align: center;
   font: inherit;
   font-size: 21px;
@@ -614,35 +638,85 @@ img {
   color: #000000;
 
   /*background-color: #ffffff;*/
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .footer-social {
-  width: 150px;
+  width: 401px;
+  /*min-height: 121px;*/
   margin: 0;
+  margin-left: 88px;
+  padding-top: 34px;
+  padding-bottom: 34px;
   /*margin-right: 213px;*/
 
   /*text-align: center;*/
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .footer-social ul {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  width: 156px;
+  margin-left: 72px;
+  margin-top: 0;
+
   list-style: none;
+  /*outline: 1px solid red;*/
+}
+
+.social-button {
+  display: flex;
+
+  width: 46px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #81b3d2;
+}
+
+.social-button path {
+  fill: white;
+  /*background-color: blue;*/
 }
 
 .footer-copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 241px;
-  margin-top: 39px;
-  margin-left: 213px;
-  margin-right: 73px;
+  /*min-height: 121px;*/
+  margin: 0;
+  margin-left: 88px;
 
   font-weight: normal;
   text-align: center;
 
   color: #000000;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
+}
+
+.text-logo {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 47px;
+  padding-right: 8px;
+
+  /*outline: 1px solid red;*/
+}
+
+.footer-logo {
+  display: flex;
+  margin: 0;
+  padding-top: 27px;
+  padding-right: 35px;
 }
 
 /* -----   Стили hotels  ----- */
@@ -650,7 +724,7 @@ img {
 .site-navigation-current a {
   color: #766357;
 
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 
 .filters {
@@ -666,7 +740,7 @@ img {
   background-position: 0 0;
   background-repeat: no-repeat;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .filter-infrastructure {
@@ -675,13 +749,13 @@ img {
   justify-content: flex-start;
   margin: 0;
   /*padding: 0;*/
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 31px;
-  padding-left: 73px;
-  padding-right: 102px;
+  padding-left: 59px;
+  padding-right: 89px;
 
   width: 313px;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 /*.filters .filter-preferences {
@@ -702,7 +776,7 @@ img {
 
   width: 600px;
 
-  outline: 5px solid mediumpurple;
+  /*outline: 1px solid mediumpurple;*/
 }
 
 .accommodation-type {
@@ -711,13 +785,12 @@ img {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 31px;
-  padding-left: 14px;
-  padding-right: 137px;
+  padding-right: 135px;
 
   width: 288px;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .cost-day {
@@ -732,7 +805,7 @@ img {
   padding-bottom: 33px;
 
   width: 328px;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .search-form {
@@ -741,8 +814,9 @@ img {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
+  min-height: 217px;
 
-  outline: 3px solid green;
+  /*outline: 1px solid green;*/
 }
 
 .search-form fieldset {
@@ -761,7 +835,7 @@ img {
 }
 
 .price-filter {
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .button-form {
@@ -783,7 +857,8 @@ img {
 
 .sorting-title {
   width: 1200px;
-  outline: 1px solid blue;
+  /*min-height: px;*/
+  /*outline: 1px solid blue;*/
 }
 
 .sorting-column {
@@ -791,21 +866,27 @@ img {
   flex-direction: row;
   width: 1200px;
   min-height: 86px;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .sorting-number {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-content: center;
-  margin: 0;
-  padding: 0;
-  padding-top: 31px;
-  margin-left: 73px;
-  margin-right: 50px;
+  /*justify-content: flex-start;*/
 
-  outline: 3px solid red;
+  margin: 0;
+  padding-top: 32px;
+  padding-left: 72px;
+
+  /*flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  margin: 0;
+  padding-top: 31px;
+  padding-left: 73px;
+  margin-right: 50px;*/
+
+  /*outline: 1px solid red;*/
 }
 
 .sorting {
@@ -813,31 +894,57 @@ img {
   flex-direction: row;
   justify-content: flex-start;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .sorting h3 {
-  display: flex;
+  display: inline-block;
+  margin: 0;
+  padding-top: 36px;
+  padding-left: 47px;
+
+  text-align: center;
+  /*display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-self: center;
+  align-self: center;*/
 
   font-size: 12px;
   line-height: 18px;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .sort-by-type {
   display: flex;
   flex-direction: row;
-  /*justify-content: space-between;
-  align-content: space-around;*/
   align-self: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  width: 290px;
+
 
   list-style: none;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
+}
+/*.sort-by-type li {
+  padding-left: 33px;
+  padding-right: 33px;
+}*/
+
+
+.sort-by-type li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 4px;
+  padding-right: 34px;
+
+  text-align: center;
+  list-style: none;
+  /*outline: 1px solid red;*/
 }
 
 .icons-position {
@@ -846,14 +953,21 @@ img {
   justify-content: center;
   align-content: center;
   align-self: center;
-  margin: 0;
-  margin-left: 590px;
-  margin-right: 0;
+  margin-top: 3px;
+  margin-left: 452px;
+  /*margin-right: 73px;*/
   padding: 0;
-  padding-top: 40px;
 
+  /*outline: 2px solid gray;*/
+}
 
-  outline: 2px solid gray;
+.icons-position-up {
+  margin-right: 12px;
+}
+
+.sorting-active {
+  margin: 0;
+  padding-right: 33px;
 }
 
 .sorting-active a{
@@ -862,6 +976,12 @@ img {
   color: #81b3d2;
 
   background-color: #ffffff;
+}
+
+.sorting-type {
+  margin: 0;
+  padding-right: 33px;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-type a {
@@ -887,25 +1007,31 @@ img {
 .hotels-list {
   display: flex;
   flex-direction: row;
-  min-height: 152px;
+  min-height: 151px;
 
-  outline: 1px solid red;
+  border-bottom: 1px solid #e5e5e5;
+  /*outline: 1px solid red;*/
 }
 
 .hotels-image {
   display: inline-block;
-  margin-left: 73px;
-  margin-right: 30px;
+  margin: 0;
   padding-top: 31px;
-  padding-bottom: 31px;
+  padding-left: 72px;
+  /*padding-top: 31px;
+  padding-bottom: 31px;*/
   width: 135px;
   min-height: 90px;
+
+  /*outline: 1px solid red;*/
 }
 
 .hotels-content {
   display: inline-block;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  width: 257px;
 }
 
 .hotel-item {
@@ -913,7 +1039,7 @@ img {
   flex-direction: row;
   justify-content: flex-start;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 
 }
 
@@ -921,7 +1047,7 @@ img {
   margin: 0;
   padding: 0;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .hotel-details {
@@ -931,24 +1057,21 @@ img {
 }
 
 .name-hotel {
-  margin: 0;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 14px;
 }
 
 .hotel-book {
-  margin-left: 5px;
+  margin-left: 6px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .price-hotel {
-  margin: 0;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 0;
+  margin-left: 1px;
+  margin-top: 10px;
+  margin-bottom: 14px;
 }
 
 .hotels-title a {
@@ -964,10 +1087,10 @@ img {
 }
 
 .button-details {
-  padding-top: 6px;
+  display: inline-block;
+  padding: 3px 10px;
+  width: 90px;
 
-  width: 110px;
-  min-height: 27px;
   text-align: center;
   font-weight: bold;
   color: #ffffff;
@@ -990,12 +1113,10 @@ img {
 }
 
 .button-book {
-  padding-top: 6px;
-  padding-left: 18px;
-  padding-right: 18px;
+  display: inline-block;
+  padding: 3px 10px;
+  width: 122px;
 
-  width: 110px;
-  min-height: 27px;
   text-align: center;
   font-weight: bold;
   color: #ffffff;
@@ -1020,16 +1141,12 @@ img {
   flex-direction: column;
   justify-content: flex-start;
 
-
-  margin: 0;
   margin-left: 522px;
-  margin-right: 73px;
   margin-top: 94px;
-  margin-bottom: 31px;
   padding-left: 16px;
-  padding-right: 15px;
-  padding-top: 6px;
-  padding-bottom: 9px;
+  padding-right: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .rating-item {
@@ -1043,12 +1160,10 @@ img {
 }
 
 .main-footer-hotels {
-  /*padding: 36px 0;*/
   width: 1200px;
-  min-height: 121px;
   color: #000000;
 
   background-color: #ffffff;
 
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
