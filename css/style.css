@@ -54,10 +54,6 @@ img {
   overflow: hidden;
 }
 
-/*.main-header {
-  margin-bottom: 76px;
-}*/
-
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -102,29 +98,17 @@ img {
   width: 240px;
   padding-top: 14px;
   padding-bottom: 16px;
-  /*padding-left: 72px;
-  padding-right: 72px;*/
 
   text-align: center;
   /*outline: 1px solid red;*/
 }
 
-/*.site-navigation li:nth-child(2) {
-  margin-left: 2px;
-}*/
-
 .site-navigation li:nth-child(3) {
   margin-left: 240px;
 }
 
-/*.site-navigation li:nth-child(4) {
-  padding-left: 94px;
-}*/
-
 .site-navigation a {
   display: block;
-  /*padding: 20px 72px;*/
-
 
   vertical-align: middle;
   color: #000000;
@@ -158,11 +142,6 @@ img {
   background-position: 0 21%;
   /*outline: 1px solid red;*/
 }
-
-/*.welcome img {
-  position: absolute;
-  top: 76px;
-}*/
 
 .welcome:before {
   content:"";
@@ -228,14 +207,7 @@ img {
   flex-direction: row;
   position: absolute;
   right: 0;
-  /*min-height: 257px;*/
 }
-
-/*.sedona-name {
-  text-align: center;
-  font-size: 21px;
-  line-height: 26px;
-}*/
 
 .sedona-item {
   font-weight: normal;
@@ -251,7 +223,6 @@ img {
   margin: 0;
   padding: 0;
   width: 1200px;
-  /*min-height: 257px;*/
   position: relative;
 
   color: #ffffff;
@@ -307,11 +278,6 @@ img {
   padding-top: 56px;
   padding-bottom: 67px;
   width: 400px;
-  /*min-height: 330px;*/
-
-  /*vertical-align: middle;
-  text-align: center;*/
-  /*outline: 1px solid green;*/
 }
 
 .features-item h3 {
@@ -339,7 +305,6 @@ img {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  /*margin-bottom: 27px;*/
   padding: 0;
   min-height: 256px;
   width: 1200px;
@@ -385,7 +350,6 @@ img {
 
 .sedona-pluses {
   width: 1200px;
-  /*margin-bottom: 52px;*/
 
   /*outline: 1px solid red;*/
 }
@@ -393,8 +357,6 @@ img {
 .features-area {
   display: flex;
   flex-direction: row;
-  /*justify-content: space-between;
-  align-items: flex-start;*/
   margin: 0;
   padding: 0;
   list-style: none;
@@ -402,21 +364,11 @@ img {
   color: #000000;
 
   background-color: #eeeeee;
-
-  /*display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-  outline: 5px solid red;*/
 }
 
 .features-pluses {
   display: flex;
   flex-direction: column;
-  /*align-items: center;
-  align-self: baseline;*/
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -467,10 +419,6 @@ img {
   line-height: 36px;
 }
 
-/*.interest .interest-choose {
-  font-weight: normal;
-}*/
-
 .interest p {
   font-weight: normal;
   font-size: 14px;
@@ -512,10 +460,6 @@ img {
 
   background-color: #503e33;
 }
-
-/*.calendar-hotel {
-  display: none;
-}*/
 
 .calendar-hotel input {
   font: inherit;
@@ -590,11 +534,8 @@ img {
 }
 
 .main-footer {
-  /*display: flex;*/
-  /*margin-top: 78px;*/
-  /*padding: 36px 0;*/
   width: 1200px;
-  /*min-height: 121px;*/
+
   color: #000000;
 
   background-color: rgba(255, 255, 255, 0.8);
@@ -631,16 +572,12 @@ img {
   margin-left: 88px;
   padding-top: 34px;
   padding-bottom: 34px;
-  /*margin-right: 213px;*/
-
-  /*text-align: center;*/
 
   /*outline: 1px solid red;*/
 }
 
 .footer-social ul {
   display: flex;
-  /*flex-wrap: wrap;*/
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
@@ -649,6 +586,7 @@ img {
   margin-top: 0;
 
   list-style: none;
+
   /*outline: 1px solid red;*/
 }
 
@@ -665,7 +603,6 @@ img {
 
 .social-button path {
   fill: white;
-  /*background-color: blue;*/
 }
 
 .footer-copyright {
@@ -673,7 +610,6 @@ img {
   flex-direction: row;
   justify-content: center;
   width: 241px;
-  /*min-height: 121px;*/
   margin: 0;
   margin-left: 88px;
 
@@ -706,14 +642,9 @@ img {
 
 .site-navigation-current a {
   color: #766357;
-
-  /*background-color: #ffffff;*/
 }
 
 .filters {
-  /*display: flex;
-  flex-direction: row;
-  justify-content: flex-start;*/
   width: 1200px;
 
   color: #ffffff;
@@ -741,25 +672,13 @@ img {
   /*outline: 1px solid red;*/
 }
 
-/*.filters .filter-preferences {
-  margin: 0;
-  margin-left: 68px;
-
-  width: 241px;
-
-  outline: 1px solid red;
-}*/
-
 .checkbox-filter {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-
   width: 600px;
-
-  /*outline: 1px solid mediumpurple;*/
 }
 
 .accommodation-type {
@@ -771,8 +690,8 @@ img {
   padding-top: 27px;
   padding-bottom: 31px;
   padding-right: 135px;
-
   width: 288px;
+
   /*outline: 1px solid red;*/
 }
 
@@ -786,8 +705,8 @@ img {
   padding: 0;
   padding-top: 31px;
   padding-bottom: 33px;
-
   width: 328px;
+
   /*outline: 1px solid red;*/
 }
 
@@ -840,6 +759,7 @@ img {
 
 .sorting-title {
   width: 1200px;
+
   /*outline: 1px solid blue;*/
 }
 
@@ -851,6 +771,7 @@ img {
   height: 87px;
 
   border-bottom: 1px solid #e5e5e5;
+
   /*outline: 1px solid red;*/
 }
 
@@ -860,6 +781,7 @@ img {
   width: 164px;
 
   text-align: left;
+
   /*outline: 1px solid red;*/
 }
 
@@ -868,6 +790,7 @@ img {
   display: flex;
   flex-direction: row;
   width: 420px;
+
   /*outline: 1px solid red;*/
 }
 
@@ -880,6 +803,7 @@ img {
   line-height: 18px;
   text-align: left;
   vertical-align: middle;
+
   /*outline: 1px solid red;*/
 }
 
@@ -981,14 +905,13 @@ img {
   fill: #81b3d2;
 }
 
-/*-------------------------------------------------------------------------------------------*/
-
 .hotels-list {
   display: flex;
   flex-direction: row;
   min-height: 150px;
 
   border-bottom: 1px solid #e5e5e5;
+
   /*outline: 1px solid red;*/
 }
 
@@ -997,8 +920,6 @@ img {
   margin: 0;
   padding-top: 29px;
   padding-left: 73px;
-  /*padding-top: 31px;
-  padding-bottom: 31px;*/
   width: 145px;
   min-height: 90px;
 
@@ -1033,6 +954,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   /*outline: 1px solid red;*/
 }
 
@@ -1154,14 +1076,8 @@ img {
   color: #666666;
 
   background-color: #f2f2f2;
-  /*outline: 1px solid red;*/
 
-  /*margin-left: 522px;
-  margin-top: 94px;
-  padding-left: 16px;
-  padding-right: 12px;
-  padding-top: 3px;
-  padding-bottom: 3px;*/
+  /*outline: 1px solid red;*/
 }
 
 .main-footer-hotels {
