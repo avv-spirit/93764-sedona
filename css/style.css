@@ -21,36 +21,14 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none;  /*#f2f2f2*/
 }
-
-/*.white_back {
-  background-image: url("white back.png");
-  position: absolute;
-  left: 26px;
-  top: -9px;
-  width: 1229px;
-  height: 2791px;
-  z-index: 2;
-
-  outline: 1px solid red;
-}
-
-.grey_back {
-  background-image: url("grey back.png");
-  position: absolute;
-  left: -320px;
-  top: 0px;
-  width: 1960px;
-  height: 4316px;
-  z-index: 1;    #000101
-}*/
 
 .wrapper-container {
   width: 1200px;
   margin: 0 auto;
 
-  /*box-shadow: 0 60px 0 0 #000000;*/
+  box-shadow: 0 0 15px 2px #dedede;
 
   /*outline: 2px solid blueviolet;*/
 }
@@ -106,18 +84,6 @@ img {
   /*outline: 1px solid red;*/
 }
 
-.main-navigation-wrapper {
-  width: 1200px;
-  /*margin-bottom: 76px;  --------- не нужен ---------- */
-
-  /*outline: 3px solid greenyellow;*/
-}
-
-.main-navigation-wrapper .container {
-  display: flex;
-  /*justify-content: center;*/
-}
-
 .site-navigation {
   display: flex;
   justify-content: flex-start;
@@ -133,26 +99,27 @@ img {
 }
 
 .site-navigation li {
-  /*padding: 15px 72px;*/
+  width: 240px;
   padding-top: 14px;
   padding-bottom: 16px;
-  padding-left: 72px;
-  padding-right: 72px;
-  /*background-color: gray;*/
+  /*padding-left: 72px;
+  padding-right: 72px;*/
+
+  text-align: center;
   /*outline: 1px solid red;*/
 }
 
-.site-navigation li:nth-child(2) {
+/*.site-navigation li:nth-child(2) {
   margin-left: 2px;
-}
+}*/
 
 .site-navigation li:nth-child(3) {
-  margin-left: 244px;
+  margin-left: 240px;
 }
 
-.site-navigation li:nth-child(4) {
+/*.site-navigation li:nth-child(4) {
   padding-left: 94px;
-}
+}*/
 
 .site-navigation a {
   display: block;
@@ -192,10 +159,10 @@ img {
   /*outline: 1px solid red;*/
 }
 
-.welcome img {
+/*.welcome img {
   position: absolute;
   top: 76px;
-}
+}*/
 
 .welcome:before {
   content:"";
@@ -229,8 +196,9 @@ img {
 }
 
 .sedona h3 {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 27px;
+  width: 445px;
 
   text-align: center;
   font-size: 21px;
@@ -252,8 +220,6 @@ img {
   justify-content: flex-start;
   margin: 0;
   padding: 45px 0;
-
-
   width: 400px;
 }
 
@@ -296,17 +262,20 @@ img {
 }
 
 .sedona-features h3 {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 14px;
-
+  width: 140px;
   text-align: center;
   font-size: 21px;
   line-height: 22px;
 }
 
 .sedona-features p {
+  margin: 0 auto;
   margin-top: 6px;
   margin-bottom: 15px;
+  width: 290px;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
@@ -355,9 +324,15 @@ img {
 }
 
 .features-item p {
+  margin: 0 auto;
+  margin-top: 9px;
+  margin-bottom: 18px;
+  padding-top: 6px;
+  width: 290px;
+
   font-weight: normal;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 19px;
   text-align: center;
 }
 .sedona-bridge {
@@ -397,8 +372,11 @@ img {
 }
 
 .feature-mountains p {
+  margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 3px;
+  width: 310px;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
@@ -447,8 +425,10 @@ img {
 }
 
 .features-pluses h3 {
+  margin: 0 auto;
   margin-top: 27px;
   margin-bottom: 7px;
+  width: 130px;
 
   text-align: center;
   font-size: 21px;
@@ -456,8 +436,11 @@ img {
 }
 
 .features-pluses p {
+  margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 4px;
+  width: 270px;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
@@ -767,7 +750,7 @@ img {
   outline: 1px solid red;
 }*/
 
-.test-1 {
+.checkbox-filter {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -857,136 +840,87 @@ img {
 
 .sorting-title {
   width: 1200px;
-  /*min-height: px;*/
   /*outline: 1px solid blue;*/
 }
 
 .sorting-column {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 1200px;
-  min-height: 86px;
+  height: 87px;
+
+  border-bottom: 1px solid #e5e5e5;
   /*outline: 1px solid red;*/
 }
 
-.sorting-number {
-  display: flex;
-  flex-direction: row;
-  /*justify-content: flex-start;*/
-
+.sorting-column h2 {
   margin: 0;
-  padding-top: 32px;
-  padding-left: 72px;
+  margin-left: 72px;
+  width: 164px;
 
-  /*flex-direction: row;
-  justify-content: center;
-  align-content: flex-start;
-  margin: 0;
-  padding-top: 31px;
-  padding-left: 73px;
-  margin-right: 50px;*/
-
+  text-align: left;
   /*outline: 1px solid red;*/
 }
 
 .sorting {
+  margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-
+  width: 420px;
   /*outline: 1px solid red;*/
 }
 
-.sorting h3 {
-  display: inline-block;
+.sorting p {
   margin: 0;
-  padding-top: 36px;
-  padding-left: 47px;
-
-  text-align: center;
-  /*display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-self: center;*/
+  padding-top: 4px;
+  width: 79px;
 
   font-size: 12px;
   line-height: 18px;
-
+  text-align: left;
+  vertical-align: middle;
   /*outline: 1px solid red;*/
 }
 
 .sort-by-type {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
   margin: 0;
   padding: 0;
-  padding-left: 40px;
-  width: 290px;
-
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 320px;
 
   list-style: none;
-
-  /*outline: 1px solid red;*/
 }
-/*.sort-by-type li {
-  padding-left: 33px;
-  padding-right: 33px;
-}*/
-
 
 .sort-by-type li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 4px;
-  padding-right: 34px;
+  padding-top: 4px;
+  margin-left: 36px;
 
-  text-align: center;
-  list-style: none;
-  /*outline: 1px solid red;*/
+  font-size: 12px;
+  line-height: 18px;
 }
 
-.icons-position {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-  margin-top: 3px;
-  margin-left: 452px;
-  /*margin-right: 73px;*/
-  padding: 0;
-
-  /*outline: 2px solid gray;*/
+.sort-by-type li:nth-child(2) {
+  margin-left: 34px;
 }
 
-.icons-position-up {
-  margin-right: 12px;
-}
-
-.sorting-active {
-  margin: 0;
-  padding-right: 33px;
+.sort-by-type li:nth-child(3) {
+  margin-left: 34px;
 }
 
 .sorting-active a{
-  font-size: 12px;
-  line-height: 18px;
   color: #81b3d2;
 
   background-color: #ffffff;
 }
 
-.sorting-type {
-  margin: 0;
-  padding-right: 33px;
+.sorting-type a {
   border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-type a {
-  font-size: 12px;
-  line-height: 18px;
   color: rgba( 0, 0, 0, 0.3);
 
   background-color: #ffffff;
@@ -1002,12 +936,57 @@ img {
   color: #000000;
 
   background-color: #ffffff;
+  border-bottom: none;
 }
+
+.icon-buttons {
+  margin-left: 437px;
+  padding-top: 3px;
+
+  /*outline: 1px solid red*/
+}
+
+.icon-button-up {
+  width: 11px;
+  height: 10px;
+}
+
+.icon-button-up path {
+  fill: #cacaca;
+}
+
+.icon-button-up path:hover {
+  fill: #231f20;
+}
+
+.icon-button-up path:active {
+  fill: #81b3d2;
+}
+
+.icon-button-down {
+  margin-left: 10px;
+  width: 11px;
+  height: 10px;
+}
+
+.icon-button-down path {
+  fill: #81b3d2;
+}
+
+.icon-button-down path:hover {
+  fill: #231f20;
+}
+
+.icon-button-down path:active {
+  fill: #81b3d2;
+}
+
+/*-------------------------------------------------------------------------------------------*/
 
 .hotels-list {
   display: flex;
   flex-direction: row;
-  min-height: 151px;
+  min-height: 150px;
 
   border-bottom: 1px solid #e5e5e5;
   /*outline: 1px solid red;*/
@@ -1016,11 +995,11 @@ img {
 .hotels-image {
   display: inline-block;
   margin: 0;
-  padding-top: 31px;
-  padding-left: 72px;
+  padding-top: 29px;
+  padding-left: 73px;
   /*padding-top: 31px;
   padding-bottom: 31px;*/
-  width: 135px;
+  width: 145px;
   min-height: 90px;
 
   /*outline: 1px solid red;*/
@@ -1028,10 +1007,10 @@ img {
 
 .hotels-content {
   display: inline-block;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 20px;
-  padding-left: 30px;
-  width: 257px;
+  padding-left: 20px;
+  width: 380px;
 }
 
 .hotel-item {
@@ -1054,6 +1033,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  /*outline: 1px solid red;*/
 }
 
 .name-hotel {
@@ -1066,6 +1046,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  /*outline: 1px solid red;*/
 }
 
 .price-hotel {
@@ -1136,20 +1117,36 @@ img {
   background-color: #503e33;
 }
 
-.rating .rating-item {
+.rating {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 400px;
+  width: 120px;
+  height: 149px;
 
-  margin-left: 522px;
-  margin-top: 94px;
+  /*outline: 1px solid red;*/
+}
+
+.star-icon {
   padding-left: 16px;
-  padding-right: 12px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 28px;
+  width: 100px;
+  height: 27px;
+  /*outline: 1px solid red;*/
+}
+
+.star-icon svg {
+  margin-left: 3px;
 }
 
 .rating-item {
+  margin-top: 37px;
+  padding-top: 3px;
+  padding-left: 3px;
+  width: 107px;
+  height: 23px;
+
   font-weight: normal;
   font-size: 14px;
   text-align: center;
@@ -1157,6 +1154,14 @@ img {
   color: #666666;
 
   background-color: #f2f2f2;
+  /*outline: 1px solid red;*/
+
+  /*margin-left: 522px;
+  margin-top: 94px;
+  padding-left: 16px;
+  padding-right: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;*/
 }
 
 .main-footer-hotels {
