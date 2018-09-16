@@ -7,10 +7,10 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  color: #000000;
+  /*color: #f2f2f2;*/
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 
 }
 
@@ -481,7 +481,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   flex-direction: row;
   margin: 0 53px;
-  margin-top: 30px;
+  margin-top: 29px;
 
   width: 460px;
   min-height: 38px;
@@ -495,19 +495,23 @@ input[type="checkbox"].visually-hidden {
 
 .calendar-line label {
   margin-left: 3px;
-  margin-right: 9px;
-  padding-top: 9px;
+  /*margin-right: 1px;*/
+  padding-top: 8px;
   text-align: left;
   white-space: nowrap;
   width: 115px;
 }
 
+.arrival-date {
+  position: relative;
+}
+
 .calendar-line .arrival-date {
-  padding-left: 15px;
+  padding-left: 12px;
 }
 
 .calendar-line .departure-date {
-  padding-left: 15px;
+  padding-left: 11px;
 }
 
 .adults-children {
@@ -533,7 +537,7 @@ input[type="checkbox"].visually-hidden {
 .adults-line label {
   padding-top: 9px;
   padding-left: 2px;
-  width: 109px;
+  width: 112px;
   text-align: left;
 }
 
@@ -541,9 +545,9 @@ input[type="checkbox"].visually-hidden {
   padding-left: 11px;
 }
 
-.children-line {
+/*.children-line {
   width: 180px;
-}
+}*/
 
 .children-line label {
   padding-top: 9px;
@@ -555,7 +559,7 @@ input[type="checkbox"].visually-hidden {
 .children-line {
   display: flex;
   flex-direction: row;
-  margin-left: 53px;
+  margin-left: 51px;
   width: 230px;
 
   /*outline: 1px solid red;*/
@@ -598,7 +602,7 @@ input[type="checkbox"].visually-hidden {
   width: 38px;
   height: 38px;
 
-  font-size: 24px;
+  font-size: 22px;
   background-color: #f2f2f2;
   border: none;
   outline: none;
@@ -615,6 +619,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .calendar-date {
+  position: absolute;
+  right: 55px;
   width: 38px;
   height: 38px;
 
@@ -632,7 +638,7 @@ input[type="checkbox"].visually-hidden {
 
 .button-find {
   margin: 0 55px;
-  margin-top: 53px;
+  margin-top: 54px;
   width: 458px;
   min-height: 58px;
 
@@ -820,7 +826,6 @@ input[type="checkbox"].visually-hidden {
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
-  /*padding: 0;*/
   padding-top: 27px;
   padding-bottom: 31px;
   padding-left: 59px;
@@ -829,10 +834,6 @@ input[type="checkbox"].visually-hidden {
   width: 313px;
   /*outline: 1px solid red;*/
 }
-
-/*filter-preferences {
-  margin-bottom: -26px;
-}*/
 
 .filter-preferences label {
   font-weight: normal;
@@ -1079,10 +1080,6 @@ input[type="checkbox"].visually-hidden {
 .additions {
   font-size: 16px;
   line-height: 21px;
-}
-
-.price-filter {
-  /*outline: 1px solid red;*/
 }
 
 .button-form {
