@@ -662,16 +662,18 @@ input[type="checkbox"].visually-hidden {
 }
 
 .main-map {
-  margin: 0;
+  /*margin: 0;
   width: 1200px;
   height: 473px;
 
   background-image: url("../img/map.jpg");
 
-  /*outline: 1px solid red;*/
+  outline: 1px solid red;*/
 }
 
 .main-footer {
+  position: absolute;
+  top: 2645px;
   width: 1200px;
 
   color: #000000;
@@ -1437,13 +1439,6 @@ input[type="checkbox"].visually-hidden {
   margin-left: 3px;
 }
 
-/*.star-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 5px;
-}*/
-
 .rating-item {
   margin-top: 37px;
   padding-top: 3px;
@@ -1461,5 +1456,3 @@ input[type="checkbox"].visually-hidden {
 
   /*outline: 1px solid red;*/
 }
-
-
