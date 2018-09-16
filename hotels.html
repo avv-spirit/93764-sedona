@@ -31,34 +31,72 @@
           <div class="filter-infrastructure">
             <fieldset class="filter-preferences">
               <legend class="additions">Инфраструктура:</legend>
-              <label for="swimming-pool">
-                <input class="choose-preferences" type="checkbox" name="choose-swimming-pool" id="swimming-pool" aria-label="Выбран бассейн" checked>
-                <span class="checkbox-indicator"></span>Бассейн
-              </label><br>
-              <input class="choose-preferences" type="checkbox" name="choose-parking" id="parking-choose" aria-label="Выбрана парковка">
-              <label for="parking-choose">Парковка</label><br>
-              <input class="choose-preferences" type="checkbox" name="choose-wifi" id="wi-fi" aria-label="Выбран WI-FI">
-              <label for="wi-fi">WI-FI</label><br>
+              <div class="test-2">
+                <label class="test-1" for="swimming-pool">
+                  <input class="visually-hidden" type="checkbox" name="choose-swimming-pool" id="swimming-pool" aria-label="Выбран бассейн" checked>
+                  <span class="checkbox-indicator"></span>Бассейн
+                </label><br>
+              </div>
+              <div class="test-2">
+                <label class="test-1" for="parking-choose">
+                  <input class="visually-hidden" type="checkbox" name="choose-parking" id="parking-choose" aria-label="Выбрана парковка">
+                  <span class="checkbox-indicator"></span>Парковка
+                </label><br>
+              </div>
+              <div class="test-2">
+                <label class="test-1" for="wi-fi">
+                  <input class="visually-hidden" type="checkbox" name="choose-wifi" id="wi-fi" aria-label="Выбран WI-FI">
+                  <span class="checkbox-indicator"></span>WI-FI
+                </label><br>
+              </div>
             </fieldset>
           </div>
+
           <div class="accommodation-type">
             <fieldset class="filter-preferences">
               <legend class="additions">Тип жилья:</legend>
-              <input class="choose-preferences" type="checkbox" name="choose-hotel" id="hotel" aria-label="Выбрана Гостиница" checked>
-              <label for="hotel">Гостиница</label><br>
-              <input class="choose-preferences" type="checkbox" name="choose-parking" id="motel" aria-label="Выбран Мотель" checked>
-              <label for="motel">Мотель</label><br>
-              <input class="choose-preferences" type="checkbox" name="choose-apartments" id="apartments" aria-label="Выбраны Апартаменты" checked>
-              <label for="apartments">Апартаменты</label><br>
+              <div class="test-2">
+                <label class="test-1" for="hotel">
+                  <input class="visually-hidden" type="checkbox" name="choose-hotel" id="hotel" aria-label="Выбрана Гостиница" checked>
+                  <span class="checkbox-indicator"></span>Гостиница
+                </label><br>
+              </div>
+              <div class="test-2">
+                <label class="test-1" for="motel">
+                  <input class="visually-hidden" type="checkbox" name="choose-parking" id="motel" aria-label="Выбран Мотель" checked>
+                  <span class="checkbox-indicator"></span>Мотель
+                </label><br>
+              </div>
+              <div class="test-2">
+                <label class="test-1" for="apartments">
+                  <input class="visually-hidden" type="checkbox" name="choose-apartments" id="apartments" aria-label="Выбраны Апартаменты" checked>
+                  <span class="checkbox-indicator"></span>Апартаменты
+                </label><br>
+              </div>
             </fieldset>
           </div>
         </div>
-        <div class="cost-day">
+        <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>
+        <!--<div class="cost-day">
           <fieldset class="price-filter">
             <legend class="price-day">Стоимость в сутки (Р):</legend>
           </fieldset>
           <button class="button-form" type="submit" aria-label="Показать список отелей">Показать</button>
-        </div>
+        </div>-->
       </form>
     </section>
     <section class="sorting-title">
@@ -138,7 +176,7 @@
           </div>
         </div>
         <div class="rating">
-          <div class="star-icon">
+          <div class="star-icon-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
               <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
             </svg>
@@ -170,7 +208,7 @@
           </div>
         </div>
         <div class="rating">
-          <div class="star-icon">
+          <div class="star-icon-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
               <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
             </svg>

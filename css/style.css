@@ -38,7 +38,8 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -800,12 +801,13 @@ img {
 
 .filters {
   width: 1200px;
+  min-height: 216px;
 
   color: #ffffff;
 
   background-color: #ffffff;
   background-image: url("../img/filter-background.jpg");
-  background-position: 0 0;
+  background-position: 50% 16%;
   background-repeat: no-repeat;
 
   /*outline: 1px solid red;*/
@@ -823,16 +825,214 @@ img {
   padding-right: 89px;
 
   width: 313px;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
+/*filter-preferences {
+  margin-bottom: -26px;
+}*/
 
-.swimming-pool {
+.filter-preferences label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filter-preferences .test-1 {
+  margin-top: 20px;
+}
+
+.test-1 {
   position: relative;
-  padding-left: 20px;
+  padding-left: 40px;
 
   cursor: pointer;
 }
+
+.test-2 {
+  margin-top: 20px;
+  padding-bottom: 4px;
+}
+
+.checkbox-indicator {
+  /*margin-bottom: 5px;*/
+}
+
+.test-1 input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.test-1 input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.test-1 input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  /*background-color: #000000;*/
+}
+
+/* ------------------------------- Фильтр ------------------------------------ */
+
+.filter-range {
+  width: 317px;
+  margin-left: 210px;
+  margin-top: 26px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 10px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 32px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 32px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 56px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+  width: 6px;
+  height: 6px;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin-left: 85px;
+  padding: 6px 20px;
+  width: 137px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+/* ------------------------------- После фильтра -------------------------------- */
 
 .checkbox-filter {
   display: flex;
@@ -841,7 +1041,7 @@ img {
   margin: 0;
   padding: 0;
   width: 600px;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 
 }
 
@@ -859,28 +1059,13 @@ img {
   /*outline: 1px solid red;*/
 }
 
-.cost-day {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 0;
-  margin-left: 200px;
-  margin-right: 73px;
-  padding: 0;
-  padding-top: 31px;
-  padding-bottom: 33px;
-  width: 328px;
-
-  /*outline: 1px solid red;*/
-}
-
 .search-form {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  min-height: 217px;
+  height: 215px;
 
   /*outline: 1px solid green;*/
 }
@@ -891,12 +1076,6 @@ img {
 
 .additions {
   font-size: 16px;
-  line-height: 21px;
-}
-
-.filter-preferences label {
-  font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
 }
 
@@ -1238,9 +1417,32 @@ img {
   /*outline: 1px solid red;*/
 }
 
+.star-icon-2 {
+  padding-left: 47px;
+  padding-top: 28px;
+  width: 100px;
+  height: 27px;
+  /*outline: 1px solid red;*/
+}
+
+.star-icon-3 {
+  padding-left: 69px;
+  padding-top: 28px;
+  width: 100px;
+  height: 27px;
+  /*outline: 1px solid red;*/
+}
+
 .star-icon svg {
   margin-left: 3px;
 }
+
+/*.star-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 5px;
+}*/
 
 .rating-item {
   margin-top: 37px;
