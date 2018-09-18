@@ -17,7 +17,7 @@ body {
 .hotels-page {
   color: #000000;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -25,6 +25,7 @@ a {
 }
 
 .wrapper-container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
 
@@ -759,9 +760,14 @@ input[type="checkbox"].visually-hidden {
   background-color: #5496bd;
 }
 
+/*.main-map {
+  width: 1200px;
+  min-height: 593px;
+}*/
+
 .main-footer {
   position: absolute;
-  top: 2642px;
+  top: 2643px;
   width: 1200px;
 
   color: #000000;
@@ -769,11 +775,14 @@ input[type="checkbox"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.main-footer-hotels {
+  background-color: #ffffff;
+}
+
 .container-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2px;
 }
 
 .visit-sedona {
@@ -926,7 +935,7 @@ input[type="checkbox"].visually-hidden {
   justify-content: flex-start;
   margin: 0;
   padding-top: 27px;
-  padding-bottom: 31px;
+  /*padding-bottom: 31px;*/
   padding-left: 59px;
   padding-right: 89px;
 
@@ -952,7 +961,7 @@ input[type="checkbox"].visually-hidden {
 
 .column-line {
   margin-top: 20px;
-  padding-bottom: 4px;
+  /*padding-bottom: 4px;*/
 }
 
 .column-content input[type="checkbox"] + .checkbox-indicator {
@@ -1223,6 +1232,7 @@ input[type="checkbox"].visually-hidden {
   height: 87px;
 
   border-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 .sorting-column h2 {
@@ -1373,6 +1383,7 @@ input[type="checkbox"].visually-hidden {
   min-height: 150px;
 
   border-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 .hotels-image {
