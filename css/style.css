@@ -7,7 +7,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  /*color: #f2f2f2;*/
+
   text-transform: uppercase;
 
   background-color: #f2f2f2;
@@ -21,16 +21,16 @@ body {
 }
 
 a {
-  text-decoration: none;  /*#f2f2f2*/
+  text-decoration: none;
 }
 
 .wrapper-container {
   width: 1200px;
   margin: 0 auto;
 
-  box-shadow: 0 0 15px 2px #dedede;
+  -webkit-box-shadow: 0 0 15px 2px #dedede;
 
-  /*outline: 2px solid blueviolet;*/
+  box-shadow: 0 0 15px 2px #dedede;
 }
 
 img {
@@ -50,14 +50,23 @@ input[type="checkbox"].visually-hidden {
 
   white-space: nowrap;
 
+  -webkit-clip-path: inset(100%);
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   font-size: 14px;
@@ -67,23 +76,27 @@ input[type="checkbox"].visually-hidden {
   position: relative;
 
   background-color: #ffffff;
-  /*outline: 1px solid blue;*/
 }
 
 
 .main-header-logo {
-  width: 140px;
-  height: 72px;
   position: absolute;
   top: -1px;
+  left: 530px;
   z-index: 1;
 
-  /*outline: 1px solid red;*/
+  width: 140px;
+  height: 72px;
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
   margin: 0;
@@ -91,8 +104,6 @@ input[type="checkbox"].visually-hidden {
   width: 1200px;
 
   list-style: none;
-
-  /*outline: 1px solid red;*/
 }
 
 .site-navigation li {
@@ -101,7 +112,6 @@ input[type="checkbox"].visually-hidden {
   padding-bottom: 15px;
 
   text-align: center;
-  /*outline: 1px solid red;*/
 }
 
 .site-navigation li:nth-child(3) {
@@ -125,12 +135,14 @@ input[type="checkbox"].visually-hidden {
 .content-container {
   width: 1200px;
   margin: 0 auto;
-
-  /*outline: 3px solid yellow;*/
 }
 
 .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   height: 508px;
@@ -139,7 +151,15 @@ input[type="checkbox"].visually-hidden {
 
   background-image: url("../img/background-mountains.jpg");
   background-position: 0 21%;
-  /*outline: 1px solid red;*/
+}
+
+.welcome img {
+  position: absolute;
+  top: 74px;
+  left: 370px;
+
+  width: 459px;
+  height: 353px;
 }
 
 .welcome:before {
@@ -147,30 +167,34 @@ input[type="checkbox"].visually-hidden {
   position: absolute;
   z-index: 1;
   top: 451px;
+  left: 0;
 
   width: 1200px;
   height: 59px;
 
   background-repeat: no-repeat;
   background-image: url("../img/intro-mask.svg");
-  /*outline: 1px solid red;*/
 }
 
 .sedona {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-bottom: 3px;
   padding: 0;
   padding-top: 60px;
-  padding-bottom: 48px;
+  padding-bottom: 50px;
   width: 1200px;
 
   color: #000000;
 
   background-color: #ffffff;
-
-  /*outline: 1px solid red;*/
 }
 
 .sedona h3 {
@@ -193,8 +217,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .feature-town {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
   padding: 45px 0;
@@ -202,7 +233,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .image-town {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   position: absolute;
   right: 0;
@@ -216,8 +252,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sedona-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -227,8 +270,6 @@ input[type="checkbox"].visually-hidden {
   color: #ffffff;
 
   background-color: #81b3d2;
-
-  /*outline: 1px solid red;*/
 }
 
 .sedona-features h3 {
@@ -254,23 +295,34 @@ input[type="checkbox"].visually-hidden {
 
 .features {
   width: 1200px;
-  /*outline: 1px solid red;*/
 }
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin: 0;
   padding: 0;
 
   list-style: none;
-  /*outline: 1px solid red;*/
 }
 
 .features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-item-align: baseline;
   align-self: baseline;
   margin: 0;
   padding: 0;
@@ -301,8 +353,15 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
 }
 .sedona-bridge {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 0;
   min-height: 256px;
@@ -311,18 +370,21 @@ input[type="checkbox"].visually-hidden {
   color: #ffffff;
 
   background-color: #81b3d2;
-
-  /*outline: 1px solid red;*/
 }
 
 .feature-mountains {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
   padding: 47px 0;
-
-
   width: 400px;
 }
 
@@ -349,12 +411,15 @@ input[type="checkbox"].visually-hidden {
 
 .sedona-pluses {
   width: 1200px;
-
-  /*outline: 1px solid red;*/
 }
 
 .features-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin: 0;
   padding: 0;
@@ -366,7 +431,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .features-pluses {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -401,16 +471,23 @@ input[type="checkbox"].visually-hidden {
 .interest {
   position: relative;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 1200px;
   text-align: center;
 
   color: #000000;
   background-color: #ffffff;
-
-  /*outline: 1px solid red;*/
 }
 
 .interest h2 {
@@ -466,7 +543,14 @@ input[type="checkbox"].visually-hidden {
   position: absolute;
   top: 293px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 316px;
   padding-top: 25px;
@@ -474,19 +558,23 @@ input[type="checkbox"].visually-hidden {
   height: 370px;
 
   background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 25px 1px lightgrey;
   box-shadow: 0 5px 25px 1px lightgrey;
 }
 
 .calendar-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin: 0 53px;
   margin-top: 29px;
 
   width: 460px;
   min-height: 38px;
-
-  /*outline: 1px solid red;*/
 }
 
 .calendar-line input {
@@ -495,11 +583,11 @@ input[type="checkbox"].visually-hidden {
 
 .calendar-line label {
   margin-left: 3px;
-  /*margin-right: 1px;*/
   padding-top: 8px;
+  width: 115px;
+
   text-align: left;
   white-space: nowrap;
-  width: 115px;
 }
 
 .arrival-date {
@@ -515,23 +603,28 @@ input[type="checkbox"].visually-hidden {
 }
 
 .adults-children {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-top: 30px;
   margin-left: 53px;
   margin-right: 53px;
   width: 460px;
-
-
-  /*outline: 1px solid red;*/
 }
 
 .adults-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 230px;
-
-  /*outline: 1px solid red;*/
 }
 
 .adults-line label {
@@ -545,10 +638,6 @@ input[type="checkbox"].visually-hidden {
   padding-left: 11px;
 }
 
-/*.children-line {
-  width: 180px;
-}*/
-
 .children-line label {
   padding-top: 9px;
   padding-left: 3px;
@@ -557,12 +646,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .children-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: 51px;
   width: 230px;
-
-  /*outline: 1px solid red;*/
 }
 
 .calendar-hotel input {
@@ -624,7 +716,7 @@ input[type="checkbox"].visually-hidden {
   width: 38px;
   height: 38px;
 
-  background-color: #f2f2f2;
+  background-color: transparent;
   border: none;
 }
 
@@ -667,49 +759,36 @@ input[type="checkbox"].visually-hidden {
   background-color: #5496bd;
 }
 
-.main-map {
-  /*margin: 0;
-  width: 1200px;
-  height: 473px;
-
-  background-image: url("../img/map.jpg");
-
-  outline: 1px solid red;*/
-}
-
 .main-footer {
   position: absolute;
-  top: 2645px;
+  top: 2642px;
   width: 1200px;
 
   color: #000000;
 
   background-color: rgba(255, 255, 255, 0.8);
-
-  /*outline: 1px solid red;*/
 }
 
 .container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 2px;
 }
 
 .visit-sedona {
   width: 241px;
-  /*min-height: 141px;*/
   margin: 0;
   margin-left: 73px;
   padding-top: 44px;
   padding-left: 7px;
+
   text-align: center;
   font: inherit;
   font-size: 21px;
   line-height: 26px;
 
   color: #000000;
-
-  /*background-color: #ffffff;*/
-  /*outline: 1px solid red;*/
 }
 
 .footer-social {
@@ -719,30 +798,39 @@ input[type="checkbox"].visually-hidden {
   margin-left: 88px;
   padding-top: 34px;
   padding-bottom: 34px;
-
-  /*outline: 1px solid red;*/
 }
 
 .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-line-pack: center;
   align-content: center;
   width: 156px;
   margin-left: 72px;
   margin-top: 0;
 
   list-style: none;
-
-  /*outline: 1px solid red;*/
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   width: 46px;
   height: 48px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 
   background-color: #81b3d2;
@@ -762,8 +850,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 241px;
   margin: 0;
@@ -773,21 +868,21 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
 
   color: #000000;
-
-  /*outline: 1px solid red;*/
 }
 
 .text-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
   padding-top: 47px;
   padding-right: 8px;
-
-  /*outline: 1px solid red;*/
 }
 
 .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding-top: 27px;
@@ -801,7 +896,6 @@ input[type="checkbox"].visually-hidden {
 .footer-logo:active path {
   fill: #bdbbbc;
 }
-/* -----   Стили hotels  ----- */
 
 .site-navigation-current a {
   color: #766357;
@@ -817,13 +911,18 @@ input[type="checkbox"].visually-hidden {
   background-image: url("../img/filter-background.jpg");
   background-position: 50% 16%;
   background-repeat: no-repeat;
-
-  /*outline: 1px solid red;*/
 }
 
 .filter-infrastructure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
   padding-top: 27px;
@@ -832,7 +931,6 @@ input[type="checkbox"].visually-hidden {
   padding-right: 89px;
 
   width: 313px;
-  /*outline: 1px solid red;*/
 }
 
 .filter-preferences label {
@@ -855,10 +953,6 @@ input[type="checkbox"].visually-hidden {
 .test-2 {
   margin-top: 20px;
   padding-bottom: 4px;
-}
-
-.checkbox-indicator {
-  /*margin-bottom: 5px;*/
 }
 
 .test-1 input[type="checkbox"] + .checkbox-indicator {
@@ -886,10 +980,7 @@ input[type="checkbox"].visually-hidden {
   height: 23px;
 
   background-image: url("../img/checkbox-on.svg");
-  /*background-color: #000000;*/
 }
-
-/* ------------------------------- Фильтр ------------------------------------ */
 
 .filter-range {
   width: 317px;
@@ -930,15 +1021,17 @@ input[type="checkbox"].visually-hidden {
   height: 22px;
 
   background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
+  padding-top: 6px;
 
   font-size: 14px;
   font-weight: normal;
-  line-height: 32px;
   vertical-align: top;
 
   cursor: pointer;
@@ -959,7 +1052,6 @@ input[type="checkbox"].visually-hidden {
   margin: 0;
 
   color: inherit;
-  font: inherit;
 
   background: none;
   border: none;
@@ -994,6 +1086,7 @@ input[type="checkbox"].visually-hidden {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
@@ -1035,22 +1128,32 @@ input[type="checkbox"].visually-hidden {
   background: #ffffff;
 }
 
-/* ------------------------------- После фильтра -------------------------------- */
-
 .checkbox-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
   width: 600px;
-  /*outline: 1px solid red;*/
-
 }
 
 .accommodation-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -1058,19 +1161,22 @@ input[type="checkbox"].visually-hidden {
   padding-bottom: 31px;
   padding-right: 135px;
   width: 288px;
-
-  /*outline: 1px solid red;*/
 }
 
 .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
   height: 215px;
-
-  /*outline: 1px solid green;*/
 }
 
 .search-form fieldset {
@@ -1083,7 +1189,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .button-form {
-  /*font: inherit;*/
   text-align: center;
   vertical-align: middle;
   color: #ffffff;
@@ -1101,20 +1206,23 @@ input[type="checkbox"].visually-hidden {
 
 .sorting-title {
   width: 1200px;
-
-  /*outline: 1px solid blue;*/
 }
 
 .sorting-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 1200px;
   height: 87px;
 
   border-bottom: 1px solid #e5e5e5;
-
-  /*outline: 1px solid red;*/
 }
 
 .sorting-column h2 {
@@ -1123,17 +1231,18 @@ input[type="checkbox"].visually-hidden {
   width: 164px;
 
   text-align: left;
-
-  /*outline: 1px solid red;*/
 }
 
 .sorting {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 420px;
-
-  /*outline: 1px solid red;*/
 }
 
 .sorting p {
@@ -1145,15 +1254,19 @@ input[type="checkbox"].visually-hidden {
   line-height: 18px;
   text-align: left;
   vertical-align: middle;
-
-  /*outline: 1px solid red;*/
 }
 
 .sort-by-type {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-line-pack: center;
   align-content: center;
   width: 320px;
 
@@ -1208,8 +1321,6 @@ input[type="checkbox"].visually-hidden {
 .icon-buttons {
   margin-left: 437px;
   padding-top: 3px;
-
-  /*outline: 1px solid red*/
 }
 
 .icon-button-up {
@@ -1252,13 +1363,16 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotels-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   min-height: 150px;
 
   border-bottom: 1px solid #e5e5e5;
-
-  /*outline: 1px solid red;*/
 }
 
 .hotels-image {
@@ -1268,8 +1382,6 @@ input[type="checkbox"].visually-hidden {
   padding-left: 73px;
   width: 145px;
   min-height: 90px;
-
-  /*outline: 1px solid red;*/
 }
 
 .hotels-content {
@@ -1281,27 +1393,34 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
-
-  /*outline: 1px solid red;*/
-
 }
 
 .hotels-title {
   margin: 0;
   padding: 0;
-
-  /*outline: 1px solid red;*/
 }
 
 .hotel-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
-
-  /*outline: 1px solid red;*/
 }
 
 .name-hotel {
@@ -1311,10 +1430,16 @@ input[type="checkbox"].visually-hidden {
 
 .hotel-book {
   margin-left: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
-  /*outline: 1px solid red;*/
 }
 
 .price-hotel {
@@ -1398,14 +1523,19 @@ input[type="checkbox"].visually-hidden {
 }
 
 .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin-left: 400px;
   width: 120px;
   height: 149px;
-
-  /*outline: 1px solid red;*/
 }
 
 .star-icon {
@@ -1413,7 +1543,6 @@ input[type="checkbox"].visually-hidden {
   padding-top: 28px;
   width: 100px;
   height: 27px;
-  /*outline: 1px solid red;*/
 }
 
 .star-icon-2 {
@@ -1421,7 +1550,6 @@ input[type="checkbox"].visually-hidden {
   padding-top: 28px;
   width: 100px;
   height: 27px;
-  /*outline: 1px solid red;*/
 }
 
 .star-icon-3 {
@@ -1429,7 +1557,6 @@ input[type="checkbox"].visually-hidden {
   padding-top: 28px;
   width: 100px;
   height: 27px;
-  /*outline: 1px solid red;*/
 }
 
 .star-icon svg {
@@ -1450,6 +1577,4 @@ input[type="checkbox"].visually-hidden {
   color: #666666;
 
   background-color: #f2f2f2;
-
-  /*outline: 1px solid red;*/
 }
