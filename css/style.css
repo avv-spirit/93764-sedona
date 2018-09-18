@@ -697,7 +697,6 @@ input[type="checkbox"].visually-hidden {
   font-size: 22px;
   background-color: #f2f2f2;
   border: none;
-  outline: none;
 }
 
 .plus-minus:hover {
@@ -717,15 +716,16 @@ input[type="checkbox"].visually-hidden {
   height: 38px;
 
   background-color: transparent;
+  fill: #cacaca;
   border: none;
 }
 
 .calendar-date svg:hover {
-  stroke: #000000;
+  fill: #000000;
 }
 
 .calendar-date svg:active {
-  stroke: #81b3d2;
+  fill: #81b3d2;
 }
 
 .button-find {
@@ -939,23 +939,23 @@ input[type="checkbox"].visually-hidden {
   line-height: 21px;
 }
 
-.filter-preferences .test-1 {
+.column-content {
   margin-top: 20px;
 }
 
-.test-1 {
+.column-content {
   position: relative;
   padding-left: 40px;
 
   cursor: pointer;
 }
 
-.test-2 {
+.column-line {
   margin-top: 20px;
   padding-bottom: 4px;
 }
 
-.test-1 input[type="checkbox"] + .checkbox-indicator {
+.column-content input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -965,13 +965,13 @@ input[type="checkbox"].visually-hidden {
   background-image: url("../img/checkbox-off.svg");
 }
 
-.test-1 input[type="checkbox"]:focus + .checkbox-indicator {
+.column-content input[type="checkbox"]:focus + .checkbox-indicator {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.test-1 input[type="checkbox"]:checked + .checkbox-indicator {
+.column-content input[type="checkbox"]:checked + .checkbox-indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -1176,7 +1176,7 @@ input[type="checkbox"].visually-hidden {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  height: 215px;
+  min-height: 215px;
 }
 
 .search-form fieldset {
