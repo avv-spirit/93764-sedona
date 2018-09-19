@@ -15,6 +15,9 @@ body {
 }
 
 .hotels-page {
+  width: 1200px;
+  margin: 0 auto;
+
   color: #000000;
 
   background-color: #f2f2f2;
@@ -25,7 +28,6 @@ a {
 }
 
 .wrapper-container {
-  position: relative;
   width: 1200px;
   margin: 0 auto;
 
@@ -115,7 +117,7 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
 }
 
-.site-navigation li:nth-child(3) {
+.site-navigation li:nth-child(4n-1) {
   margin-left: 240px;
 }
 
@@ -310,6 +312,7 @@ input[type="checkbox"].visually-hidden {
   padding: 0;
 
   list-style: none;
+  background-color: #ffffff;
 }
 
 .features-item {
@@ -330,6 +333,8 @@ input[type="checkbox"].visually-hidden {
   padding-top: 56px;
   padding-bottom: 67px;
   width: 400px;
+
+  background-color: #ffffff;
 }
 
 .features-item h3 {
@@ -470,8 +475,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .interest {
-  position: relative;
-
   display: -webkit-box;
 
   display: -ms-flexbox;
@@ -506,6 +509,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-title {
+  position: relative;
   margin: 0;
   margin-top: 33px;
   padding: 0;
@@ -542,7 +546,6 @@ input[type="checkbox"].visually-hidden {
 
 .calendar-hotel {
   position: absolute;
-  top: 293px;
 
   display: -webkit-box;
 
@@ -766,23 +769,37 @@ input[type="checkbox"].visually-hidden {
 }*/
 
 .main-footer {
-  position: absolute;
-  top: 2643px;
+  position: relative;
+  width: 1200px;
+
+  color: #000000;
+}
+
+.main-footer-hotels {
   width: 1200px;
 
   color: #000000;
 
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.main-footer-hotels {
   background-color: #ffffff;
 }
 
 .container-footer {
+  position: absolute;
+  bottom: -5px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1200px;
+
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hotels-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
 }
 
 .visit-sedona {
@@ -818,11 +835,10 @@ input[type="checkbox"].visually-hidden {
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
   -ms-flex-line-pack: center;
   align-content: center;
   width: 156px;
-  margin-left: 72px;
+  margin-left: 69px;
   margin-top: 0;
 
   list-style: none;
@@ -832,6 +848,7 @@ input[type="checkbox"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 6px;
 
   width: 46px;
   height: 48px;
@@ -948,20 +965,20 @@ input[type="checkbox"].visually-hidden {
   line-height: 21px;
 }
 
-.column-content {
+/*.column-accomodation {
   margin-top: 20px;
-}
+}*/
 
 .column-content {
   position: relative;
-  padding-left: 40px;
+  padding-left: 41px;
 
   cursor: pointer;
 }
 
 .column-line {
   margin-top: 20px;
-  /*padding-bottom: 4px;*/
+  padding-bottom: 4px;
 }
 
 .column-content input[type="checkbox"] + .checkbox-indicator {
@@ -982,7 +999,7 @@ input[type="checkbox"].visually-hidden {
 
 .column-content input[type="checkbox"]:checked + .checkbox-indicator {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
 
   width: 27px;
@@ -1167,7 +1184,7 @@ input[type="checkbox"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-top: 27px;
-  padding-bottom: 31px;
+  /*padding-bottom: 31px;*/
   padding-right: 135px;
   width: 288px;
 }
@@ -1440,7 +1457,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-book {
-  margin-left: 6px;
+  margin-left: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
