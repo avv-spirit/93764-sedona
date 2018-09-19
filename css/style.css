@@ -11,7 +11,6 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-
 }
 
 .hotels-page {
@@ -28,10 +27,9 @@ a {
 }
 
 .wrapper-container {
+  -webkit-box-shadow: 0 0 15px 2px #dedede;
   width: 1200px;
   margin: 0 auto;
-
-  -webkit-box-shadow: 0 0 15px 2px #dedede;
 
   box-shadow: 0 0 15px 2px #dedede;
 }
@@ -43,6 +41,7 @@ img {
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
+  -webkit-clip-path: inset(100%);
   position: absolute;
 
   width: 1px;
@@ -52,31 +51,27 @@ input[type="checkbox"].visually-hidden {
   padding: 0;
 
   white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-
-  position: relative;
 
   background-color: #ffffff;
 }
@@ -93,13 +88,13 @@ input[type="checkbox"].visually-hidden {
 }
 
 .site-navigation {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -ms-flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
   margin: 0;
@@ -141,17 +136,17 @@ input[type="checkbox"].visually-hidden {
 }
 
 .welcome {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 1200px;
   height: 508px;
 
-  position: relative;
-
+  background-color: #e2eff7;
   background-image: url("../img/background-mountains.jpg");
   background-position: 0 21%;
 }
@@ -166,11 +161,11 @@ input[type="checkbox"].visually-hidden {
 }
 
 .welcome:before {
-  content:"";
   position: absolute;
   z-index: 1;
   top: 451px;
   left: 0;
+  content:"";
 
   width: 1200px;
   height: 59px;
@@ -180,15 +175,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sedona {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   padding: 0;
   padding-top: 60px;
@@ -220,15 +215,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .feature-town {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   margin: 0;
   padding: 45px 0;
@@ -236,12 +231,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .image-town {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   position: absolute;
   right: 0;
@@ -255,20 +250,20 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sedona-features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
   width: 1200px;
-  position: relative;
 
   color: #ffffff;
 
@@ -279,6 +274,7 @@ input[type="checkbox"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 14px;
   width: 140px;
+
   text-align: center;
   font-size: 21px;
   line-height: 22px;
@@ -301,12 +297,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .features-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
@@ -316,17 +312,17 @@ input[type="checkbox"].visually-hidden {
 }
 
 .features-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
   -ms-flex-item-align: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   align-self: baseline;
   margin: 0;
   padding: 0;
@@ -359,15 +355,15 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
 }
 .sedona-bridge {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row-reverse;
   justify-content: flex-start;
   padding: 0;
   min-height: 256px;
@@ -379,15 +375,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .feature-mountains {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   margin: 0;
   padding: 47px 0;
@@ -420,12 +416,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .features-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
@@ -437,12 +433,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .features-pluses {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -475,22 +471,21 @@ input[type="checkbox"].visually-hidden {
 }
 
 .interest {
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   width: 1200px;
-  text-align: center;
 
+  text-align: center;
   color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -519,18 +514,15 @@ input[type="checkbox"].visually-hidden {
   display: inline-block;
   padding: 30px 139px;
   margin-bottom: 0;
-  text-align: center;
 
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
   vertical-align: middle;
-
-
   color: #ffffff;
 
   background-color: #766357;
-
   border: none;
 }
 
@@ -545,16 +537,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .calendar-hotel {
-  position: absolute;
-
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
+  -webkit-box-shadow: 0 5px 25px 1px lightgrey;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: column;
   margin-left: 316px;
   padding-top: 25px;
@@ -562,21 +553,19 @@ input[type="checkbox"].visually-hidden {
   height: 370px;
 
   background-color: #ffffff;
-  -webkit-box-shadow: 0 5px 25px 1px lightgrey;
   box-shadow: 0 5px 25px 1px lightgrey;
 }
 
 .calendar-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   margin: 0 53px;
   margin-top: 29px;
-
   width: 460px;
   min-height: 38px;
 }
@@ -607,12 +596,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .adults-children {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   margin-top: 30px;
   margin-left: 53px;
@@ -621,12 +610,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .adults-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   width: 230px;
 }
@@ -635,6 +624,7 @@ input[type="checkbox"].visually-hidden {
   padding-top: 9px;
   padding-left: 2px;
   width: 112px;
+
   text-align: left;
 }
 
@@ -650,20 +640,20 @@ input[type="checkbox"].visually-hidden {
 }
 
 .children-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   margin-left: 51px;
-  width: 230px;
 }
 
 .calendar-hotel input {
   margin: 0;
   padding: 0;
+
   font: inherit;
   text-transform: uppercase;
 
@@ -719,8 +709,8 @@ input[type="checkbox"].visually-hidden {
   width: 38px;
   height: 38px;
 
-  background-color: transparent;
   fill: #cacaca;
+  background-color: transparent;
   border: none;
 }
 
@@ -763,13 +753,17 @@ input[type="checkbox"].visually-hidden {
   background-color: #5496bd;
 }
 
-/*.main-map {
+.main-map {
   width: 1200px;
   min-height: 593px;
-}*/
+
+  background-color: #f2f1ef;
+  background-image: url("../img/map.jpg");
+}
 
 .main-footer {
   position: relative;
+
   width: 1200px;
 
   color: #000000;
@@ -784,11 +778,11 @@ input[type="checkbox"].visually-hidden {
 }
 
 .container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   position: absolute;
   bottom: -5px;
 
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1200px;
 
@@ -813,13 +807,11 @@ input[type="checkbox"].visually-hidden {
   font: inherit;
   font-size: 21px;
   line-height: 26px;
-
   color: #000000;
 }
 
 .footer-social {
   width: 401px;
-  /*min-height: 121px;*/
   margin: 0;
   margin-left: 88px;
   padding-top: 34px;
@@ -827,15 +819,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .footer-social ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
   -ms-flex-pack: distribute;
   -ms-flex-line-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
   align-content: center;
   width: 156px;
   margin-left: 69px;
@@ -845,18 +837,17 @@ input[type="checkbox"].visually-hidden {
 }
 
 .social-button {
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 6px;
-
   width: 46px;
   height: 48px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 
   background-color: #81b3d2;
@@ -876,15 +867,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .footer-copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   width: 241px;
   margin: 0;
@@ -933,26 +924,25 @@ input[type="checkbox"].visually-hidden {
 
   color: #ffffff;
 
-  background-color: #ffffff;
+  background-color: #487ba5;
   background-image: url("../img/filter-background.jpg");
   background-position: 50% 16%;
   background-repeat: no-repeat;
 }
 
 .filter-infrastructure {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   margin: 0;
   padding-top: 27px;
-  /*padding-bottom: 31px;*/
   padding-left: 59px;
   padding-right: 89px;
 
@@ -964,10 +954,6 @@ input[type="checkbox"].visually-hidden {
   font-size: 14px;
   line-height: 21px;
 }
-
-/*.column-accomodation {
-  margin-top: 20px;
-}*/
 
 .column-content {
   position: relative;
@@ -983,7 +969,7 @@ input[type="checkbox"].visually-hidden {
 
 .column-content input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
 
   width: 23px;
@@ -1038,6 +1024,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .price-controls::after {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   content: "";
   position: absolute;
   top: 50%;
@@ -1047,8 +1035,6 @@ input[type="checkbox"].visually-hidden {
   height: 22px;
 
   background: #ffffff;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -1103,16 +1089,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .range-toggle {
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
 
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
@@ -1155,15 +1140,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .checkbox-filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -1171,34 +1156,33 @@ input[type="checkbox"].visually-hidden {
 }
 
 .accommodation-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
   padding-top: 27px;
-  /*padding-bottom: 31px;*/
   padding-right: 135px;
   width: 288px;
 }
 
 .search-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -1235,15 +1219,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sorting-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   width: 1200px;
   height: 87px;
@@ -1261,13 +1245,13 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sorting {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   width: 420px;
 }
@@ -1280,20 +1264,19 @@ input[type="checkbox"].visually-hidden {
   font-size: 12px;
   line-height: 18px;
   text-align: left;
-  vertical-align: middle;
 }
 
 .sort-by-type {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  -ms-flex-line-pack: center;
   margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-line-pack: center;
   align-content: center;
   width: 320px;
 
@@ -1353,7 +1336,6 @@ input[type="checkbox"].visually-hidden {
 .icon-button-up {
   width: 11px;
   height: 10px;
-  outline: none;
 }
 
 .icon-button-up path {
@@ -1366,14 +1348,12 @@ input[type="checkbox"].visually-hidden {
 
 .icon-button-up path:active {
   fill: #81b3d2;
-  outline: none;
 }
 
 .icon-button-down {
   margin-left: 10px;
   width: 11px;
   height: 10px;
-  outline: none;
 }
 
 .icon-button-down path {
@@ -1390,12 +1370,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotels-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   min-height: 150px;
 
@@ -1410,6 +1390,8 @@ input[type="checkbox"].visually-hidden {
   padding-left: 73px;
   width: 145px;
   min-height: 90px;
+
+  vertical-align: middle;
 }
 
 .hotels-content {
@@ -1418,18 +1400,20 @@ input[type="checkbox"].visually-hidden {
   padding-bottom: 20px;
   padding-left: 20px;
   width: 380px;
+
+  vertical-align: middle;
 }
 
 .hotel-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
 }
 
@@ -1439,15 +1423,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -1457,21 +1441,20 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-book {
-  margin-left: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  margin-left: 6px;
 }
 
 .price-hotel {
-  margin-left: 1px;
   margin-top: 10px;
   margin-bottom: 14px;
 }
@@ -1505,14 +1488,13 @@ input[type="checkbox"].visually-hidden {
   padding: 3px 10px;
   width: 90px;
 
+  vertical-align: middle;
   text-align: center;
   font-weight: bold;
   color: #ffffff;
 
   background-color: #81b3d2;
-
 }
-
 
 .button-details:hover {
   color: #ffffff;
@@ -1531,6 +1513,7 @@ input[type="checkbox"].visually-hidden {
   padding: 3px 10px;
   width: 122px;
 
+  vertical-align: middle;
   text-align: center;
   font-weight: bold;
   color: #ffffff;
@@ -1551,15 +1534,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   margin-left: 400px;
   width: 120px;
