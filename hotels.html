@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="hotels-page">
   <div class="wrapper-container">
@@ -32,24 +32,16 @@
               <fieldset class="filter-preferences">
                 <legend class="additions">Инфраструктура:</legend>
                 <div class="column-line">
-                  <!--<label class="column-content" for="swimming-pool">
-                    <input class="visually-hidden" type="checkbox" name="choose-swimming-pool" id="swimming-pool" aria-label="Выбран бассейн" checked>
-                    <span class="checkbox-indicator"></span>Бассейн
-                  </label>-->
-                  <input  class="visually-hidden" id="swimming-pool" type="checkbox" name="choose-swimming-pool" aria-label="Выбран бассейн" checked>
-                  <label class="checkbox-indicator" for="swimming-pool">Бассейн</label>
+                  <input class="visually-hidden" id="swimming-pool" type="checkbox" checked>
+                  <label class="column-content" for="swimming-pool">Бассейн</label>
                 </div>
                 <div class="column-line">
-                  <label class="column-content" for="parking-choose">
-                    <input class="visually-hidden" type="checkbox" name="choose-parking" id="parking-choose" aria-label="Выбрана парковка">
-                    <span class="checkbox-indicator"></span>Парковка
-                  </label>
+                  <input class="visually-hidden" id="parking-choose" type="checkbox">
+                  <label class="column-content" for="parking-choose">Парковка</label>
                 </div>
                 <div class="column-line">
-                  <label class="column-content" for="wi-fi">
-                    <input class="visually-hidden" type="checkbox" name="choose-wifi" id="wi-fi" aria-label="Выбран WI-FI">
-                    <span class="checkbox-indicator"></span>WI-FI
-                  </label>
+                  <input class="visually-hidden" id="wi-fi" type="checkbox">
+                  <label class="column-content" for="wi-fi">WI-FI</label>
                 </div>
               </fieldset>
             </div>
@@ -57,22 +49,16 @@
               <fieldset class="filter-preferences">
                 <legend class="additions">Тип жилья:</legend>
                 <div class="column-line">
-                  <label class="column-content" for="hotel">
-                    <input class="visually-hidden" type="checkbox" name="choose-hotel" id="hotel" aria-label="Выбрана Гостиница" checked>
-                    <span class="checkbox-indicator"></span>Гостиница
-                  </label>
+                  <input class="visually-hidden" id="hotel" type="checkbox" checked>
+                  <label class="column-content" for="hotel">Гостиница</label>
                 </div>
                 <div class="column-line">
-                  <label class="column-content" for="motel">
-                    <input class="visually-hidden" type="checkbox" name="choose-parking" id="motel" aria-label="Выбран Мотель" checked>
-                    <span class="checkbox-indicator"></span>Мотель
-                  </label>
+                  <input class="visually-hidden" id="motel" type="checkbox" checked>
+                  <label class="column-content" for="motel">Мотель</label>
                 </div>
                 <div class="column-line">
-                  <label class="column-content" for="apartments">
-                    <input class="visually-hidden" type="checkbox" name="choose-apartments" id="apartments" aria-label="Выбраны Апартаменты" checked>
-                    <span class="checkbox-indicator"></span>Апартаменты
-                  </label>
+                  <input class="visually-hidden" id="apartments" type="checkbox" checked>
+                  <label class="column-content" for="apartments">Апартаменты</label>
                 </div>
               </fieldset>
             </div>
