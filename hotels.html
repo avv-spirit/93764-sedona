@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="hotels-page">
   <div class="wrapper-container">
@@ -32,10 +32,12 @@
               <fieldset class="filter-preferences">
                 <legend class="additions">Инфраструктура:</legend>
                 <div class="column-line">
-                  <label class="column-content" for="swimming-pool">
+                  <!--<label class="column-content" for="swimming-pool">
                     <input class="visually-hidden" type="checkbox" name="choose-swimming-pool" id="swimming-pool" aria-label="Выбран бассейн" checked>
                     <span class="checkbox-indicator"></span>Бассейн
-                  </label>
+                  </label>-->
+                  <input  class="visually-hidden" id="swimming-pool" type="checkbox" name="choose-swimming-pool" aria-label="Выбран бассейн" checked>
+                  <label class="checkbox-indicator" for="swimming-pool">Бассейн</label>
                 </div>
                 <div class="column-line">
                   <label class="column-content" for="parking-choose">
