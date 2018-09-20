@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <div class="wrapper-container">
@@ -94,7 +94,7 @@
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="search-title">
           <a class="button-find-hotels" href="#">Поиск гостиницы в Седоне</a>
-          <form class="calendar-hotel" action="echo.htmlacademy.ru">
+          <form class="calendar-hotel" action="https://echo.htmlacademy.ru" method="post">
             <div class="calendar-line">
               <label for="arrivals">Дата заезда:</label>
               <input class="arrival-date" type="text" name="arrivals" id="arrivals" value="24 апреля 2017">
@@ -123,7 +123,7 @@
               <div class="children-line">
                 <label for="children">Дети:</label>
                 <button class="plus-minus" type="submit">&#8211;</button>
-                <input class="children-choose" type="text" name="chlidren" id="children" value="0">
+                <input class="children-choose" type="text" name="children" id="children" value="0">
                 <button class="plus-minus" type="submit">+</button>
               </div>
             </div>
