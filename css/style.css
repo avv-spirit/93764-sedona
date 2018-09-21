@@ -238,8 +238,7 @@ input[type="checkbox"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
-  position: absolute;
-  right: 0;
+  width: 800px;
 }
 
 .sedona-item {
@@ -366,12 +365,22 @@ input[type="checkbox"].visually-hidden {
   flex-direction: row-reverse;
   justify-content: flex-start;
   padding: 0;
-  min-height: 256px;
   width: 1200px;
 
   color: #ffffff;
 
   background-color: #81b3d2;
+}
+
+.bridge-image {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
 }
 
 .feature-mountains {
