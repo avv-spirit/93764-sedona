@@ -519,10 +519,6 @@ input[type="checkbox"].visually-hidden {
   padding: 0;
 }
 
-.calendar-hotel-off {
-  display: none;
-}
-
 .button-find-hotels {
   display: inline-block;
   padding: 30px 139px;
@@ -566,8 +562,40 @@ input[type="checkbox"].visually-hidden {
   height: 370px;
 
   background-color: #ffffff;
-  box-shadow: 0 5px 25px 1px lightgrey;
+  box-shadow: 0 7px 25px 1px lightgrey;
 }
+
+.calendar-hotel-off {
+  display: none;
+}
+
+.animation {
+  animation-name: lift-up;
+  animation-duration: 3s;
+}
+
+@keyframes lift-up {
+  0% {
+    transform: translateY(0px);
+  }
+100% {
+  transform: translateY(370px);
+}
+}
+
+/*.animation-off {
+  animation-name: lift-down;
+  animation-duration: 3s;
+}
+
+@keyframes lift-down {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(370px);
+  }
+}*/
 
 .calendar-line {
   -webkit-box-orient: horizontal;
