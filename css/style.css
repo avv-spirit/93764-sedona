@@ -569,21 +569,78 @@ input[type="checkbox"].visually-hidden {
   display: none;
 }
 
-.animation {
+.slide-down {
+  -webkit-animation-name: slide-down;
+  animation-name: slide-down;
+}
+
+@-webkit-keyframes slide-down {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*.fade-in {
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}*/
+
+/*.animation {
   animation-name: lift-up;
   animation-duration: 3s;
+  transition-duration: 1s
 }
 
 @keyframes lift-up {
   0% {
-    transform: translateY(0px);
+    transform: translateY(-370px);
   }
 100% {
-  transform: translateY(370px);
+  transform: translateY(0px);
 }
 }
 
-/*.animation-off {
+.animation-off {
   animation-name: lift-down;
   animation-duration: 3s;
 }
