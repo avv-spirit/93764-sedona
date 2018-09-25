@@ -1,7 +1,6 @@
 var buttonFind = document.querySelector(".button-find-hotels");
 var formAnimate = document.querySelector(".calendar-hotel");
 
-var form = document.querySelector("form");
 var arrivals = document.querySelector("[name=arrivals]")
 var departure = document.querySelector("[name=departure]");
 
@@ -17,24 +16,21 @@ try {
 buttonFind.addEventListener("click", function (evt) {
   evt.preventDefault();
   formAnimate.classList.toggle("fade-in");
-
   if (storage) {
-    arrivals.value = storage
+    arrivals.value = storage;
     departure.focus();
   } else {
     arrivals.focus();
   }
 });
 
-form.addEventListener("submit", function (evt) {
+formAnimate.addEventListener("submit", function (evt) {
   if (!arrivals.value || !departure.value) {
     evt.preventDefault();
-    document.classList.add("form-error");
+    formAnimate.classList.add("form-error");
     document.offsetWidth = document.offsetWidth;
-    document.classList.remove("form-error");
   } else {
     if (isStorageSupport)
     localStorage.setItem("arrivals", arrivals.value);
   }
-
 });
