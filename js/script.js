@@ -16,6 +16,10 @@ try {
 buttonFind.addEventListener("click", function (evt) {
   evt.preventDefault();
   formAnimate.classList.toggle("fade-in");
+  formAnimate.classList.toggle("calendar-hotel-off");
+  setTimeout(function () {
+    formAnimate.classList.remove("fade-in");
+  }, 1050)
   if (storage) {
     arrivals.value = storage;
     departure.focus();
