@@ -29,6 +29,9 @@ formAnimate.addEventListener("submit", function (evt) {
     evt.preventDefault();
     formAnimate.classList.add("form-error");
     document.offsetWidth = document.offsetWidth;
+    setTimeout(function() {
+      formAnimate.classList.remove("form-error");
+    }, 650);
   } else {
     if (isStorageSupport)
     localStorage.setItem("arrivals", arrivals.value);
