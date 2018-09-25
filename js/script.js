@@ -15,11 +15,11 @@ try {
 
 buttonFind.addEventListener("click", function (evt) {
   evt.preventDefault();
-  formAnimate.classList.toggle("fade-in");
+  formAnimate.classList.add("fade-in");
   formAnimate.classList.toggle("calendar-hotel-off");
-  setTimeout(function () {
+  setTimeout(function() {
     formAnimate.classList.remove("fade-in");
-  }, 1050)
+  }, 1050);
   if (storage) {
     arrivals.value = storage;
     departure.focus();
@@ -38,6 +38,6 @@ formAnimate.addEventListener("submit", function (evt) {
     }, 650);
   } else {
     if (isStorageSupport)
-    localStorage.setItem("arrivals", arrivals.value);
+      localStorage.setItem("arrivals", arrivals.value);
   }
 });
